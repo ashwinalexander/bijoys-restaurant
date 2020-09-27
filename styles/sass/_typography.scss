@@ -1,0 +1,75 @@
+//france inspired color palette https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
+$primary-color: #fe5f55; //Orange Red Crayola
+$secondary-color: #bdd5ea; //Beau Blue
+$tertiary-color: #577399; //Blue Yonder
+$accent-color: #495867; //Black Coral
+$light-color: #f7f7ff; //Ghost White
+$dark-color: #191919; //eerie black
+
+$font-family: "Didact Gothic", sans-serif;
+$secondary-font: "Montserrat", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family;
+}
+
+p,
+a,
+label,
+input,
+button {
+  font-family: $secondary-font;
+}
+
+h1 {
+  text-transform: lowercase;
+  font-size: 9rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+//body text
+input[type="radio"],
+p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+}
+
+button {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $primary-color;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 4px solid transparent;
+  background-color: $tertiary-color;
+  &:hover {
+    border: 4px solid $accent-color;
+    color: $primary-color;
+  }
+}
+
+a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration-line: none;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
