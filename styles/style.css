@@ -382,6 +382,9 @@ h4,
 h5,
 h6 {
   font-family: "Didact Gothic", sans-serif;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: bolder;
 }
 
 p,
@@ -425,7 +428,7 @@ button {
 }
 
 button:hover {
-  border: 4px solid #495867;
+  border: 4px solid #eeff03;
   color: #fe5f55;
 }
 
@@ -470,7 +473,7 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   color: #f7f7ff;
 }
 
-.contact-us {
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,57 +489,59 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
           justify-content: space-between;
 }
 
-.contact-us .contact-address,
-.contact-us .contact-hours,
-.contact-us .contact-social {
+footer .contact-address,
+footer .contact-hours,
+footer .contact-social {
   padding: 20px 10px;
   width: 33%;
 }
 
-.contact-us .contact-address h3,
-.contact-us .contact-hours h3,
-.contact-us .contact-social h3 {
+footer .contact-address h3,
+footer .contact-hours h3,
+footer .contact-social h3 {
   text-align: center;
   text-transform: lowercase;
+  font-weight: bolder;
   padding-bottom: 25px;
+  color: #eeff03;
 }
 
-.contact-us .contact-address p,
-.contact-us .contact-address a,
-.contact-us .contact-address a:visited,
-.contact-us .contact-hours p,
-.contact-us .contact-hours a,
-.contact-us .contact-hours a:visited,
-.contact-us .contact-social p,
-.contact-us .contact-social a,
-.contact-us .contact-social a:visited {
+footer .contact-address p,
+footer .contact-address a,
+footer .contact-address a:visited,
+footer .contact-hours p,
+footer .contact-hours a,
+footer .contact-hours a:visited,
+footer .contact-social p,
+footer .contact-social a,
+footer .contact-social a:visited {
   font-size: 1.6rem;
   text-align: center;
   color: #f7f7ff;
 }
 
-.contact-us .contact-address a:hover,
-.contact-us .contact-address a:focus,
-.contact-us .contact-address a:active,
-.contact-us .contact-hours a:hover,
-.contact-us .contact-hours a:focus,
-.contact-us .contact-hours a:active,
-.contact-us .contact-social a:hover,
-.contact-us .contact-social a:focus,
-.contact-us .contact-social a:active {
-  color: #bdd5ea;
+footer .contact-address a:hover,
+footer .contact-address a:focus,
+footer .contact-address a:active,
+footer .contact-hours a:hover,
+footer .contact-hours a:focus,
+footer .contact-hours a:active,
+footer .contact-social a:hover,
+footer .contact-social a:focus,
+footer .contact-social a:active {
+  color: #eeff03;
 }
 
-.contact-us .contact-social .social-icons ul {
+footer .contact-social .social-icons ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.contact-us .contact-social .social-icons ul li {
+footer .contact-social .social-icons ul li {
   padding: 0px 10px;
 }
 
-.contact-us .contact-social i {
+footer .contact-social i {
   font-size: 2.8rem;
 }

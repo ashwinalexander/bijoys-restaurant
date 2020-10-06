@@ -1,4 +1,4 @@
-.contact-us {
+footer {
   display: flex;
   flex-direction: row;
   background-color: $dark-color;
@@ -14,7 +14,10 @@
     h3 {
       text-align: center;
       text-transform: lowercase;
+      font-weight: bolder;
+
       padding-bottom: 25px;
+      color: $accent-color;
     }
 
     p,
@@ -27,7 +30,7 @@
     a:hover,
     a:focus,
     a:active {
-      color: $secondary-color;
+      color: $accent-color;
     }
   }
 

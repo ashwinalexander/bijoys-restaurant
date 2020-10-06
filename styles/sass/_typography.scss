@@ -2,7 +2,7 @@
 $primary-color: #fe5f55; //Orange Red Crayola
 $secondary-color: #bdd5ea; //Beau Blue
 $tertiary-color: #577399; //Blue Yonder
-$accent-color: #495867; //Black Coral
+$accent-color: #eeff03; //Black Coral
 $light-color: #f7f7ff; //Ghost White
 $dark-color: #191919; //eerie black
 
@@ -16,6 +16,9 @@ h4,
 h5,
 h6 {
   font-family: $font-family;
+  text-align: center;
+  text-transform: lowercase;
+  font-weight: bolder;
 }
 
 p,
