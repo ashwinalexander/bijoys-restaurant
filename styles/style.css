@@ -394,7 +394,7 @@ button {
 
 h1 {
   text-transform: lowercase;
-  font-size: 9rem;
+  font-size: 5rem;
 }
 
 h2 {
@@ -468,4 +468,24 @@ nav ul li a {
 
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
   color: #f7f7ff;
+}
+
+.contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #191919;
+  color: #f7f7ff;
+  padding: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-us div {
+  padding: 10px;
 }

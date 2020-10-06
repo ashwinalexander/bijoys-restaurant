@@ -1,0 +1,11 @@
+.contact-us {
+  display: flex;
+  flex-direction: row;
+  background-color: $dark-color;
+  color: $light-color;
+  padding: 10px;
+  justify-content: space-between;
+  div {
+    padding: 10px;
+  }
+}
