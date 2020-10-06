@@ -403,7 +403,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -459,7 +459,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 20px;
+  padding: 0px 20px;
 }
 
 nav ul li a {
@@ -486,6 +486,57 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
           justify-content: space-between;
 }
 
-.contact-us div {
-  padding: 10px;
+.contact-us .contact-address,
+.contact-us .contact-hours,
+.contact-us .contact-social {
+  padding: 20px 10px;
+  width: 33%;
+}
+
+.contact-us .contact-address h3,
+.contact-us .contact-hours h3,
+.contact-us .contact-social h3 {
+  text-align: center;
+  text-transform: lowercase;
+  padding-bottom: 25px;
+}
+
+.contact-us .contact-address p,
+.contact-us .contact-address a,
+.contact-us .contact-address a:visited,
+.contact-us .contact-hours p,
+.contact-us .contact-hours a,
+.contact-us .contact-hours a:visited,
+.contact-us .contact-social p,
+.contact-us .contact-social a,
+.contact-us .contact-social a:visited {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #f7f7ff;
+}
+
+.contact-us .contact-address a:hover,
+.contact-us .contact-address a:focus,
+.contact-us .contact-address a:active,
+.contact-us .contact-hours a:hover,
+.contact-us .contact-hours a:focus,
+.contact-us .contact-hours a:active,
+.contact-us .contact-social a:hover,
+.contact-us .contact-social a:focus,
+.contact-us .contact-social a:active {
+  color: #bdd5ea;
+}
+
+.contact-us .contact-social .social-icons ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-us .contact-social .social-icons ul li {
+  padding: 0px 10px;
+}
+
+.contact-us .contact-social i {
+  font-size: 2.8rem;
 }
