@@ -1,48 +1,50 @@
 footer {
-  display: flex;
-  flex-direction: row;
-  background-color: $dark-color;
-  color: $light-color;
-  padding: 10px;
-  justify-content: space-between;
-  .contact-address,
-  .contact-hours,
-  .contact-social {
-    padding: 20px 10px;
-    width: 33%;
+  .contact-footer {
+    display: flex;
+    flex-direction: row;
+    background-color: $dark-color;
+    color: $light-color;
+    padding: 10px;
+    justify-content: space-between;
+    .contact-address,
+    .contact-hours,
+    .contact-social {
+      padding: 20px 10px;
+      width: 33%;
 
-    h3 {
-      text-align: center;
-      text-transform: lowercase;
-      font-weight: bolder;
+      h3 {
+        text-align: center;
+        text-transform: lowercase;
+        font-weight: bolder;
 
-      padding-bottom: 25px;
-      color: $accent-color;
-    }
+        padding-bottom: 25px;
+        color: $accent-color;
+      }
 
-    p,
-    a,
-    a:visited {
-      font-size: 1.6rem;
-      text-align: center;
-      color: $light-color;
-    }
-    a:hover,
-    a:focus,
-    a:active {
-      color: $accent-color;
-    }
-  }
-
-  .contact-social {
-    .social-icons ul {
-      justify-content: center;
-      li {
-        padding: 0px 10px;
+      p,
+      a,
+      a:visited {
+        font-size: 1.6rem;
+        text-align: center;
+        color: $light-color;
+      }
+      a:hover,
+      a:focus,
+      a:active {
+        color: $accent-color;
       }
     }
-    i {
-      font-size: 2.8rem;
+
+    .contact-social {
+      .social-icons ul {
+        justify-content: center;
+        li {
+          padding: 0px 10px;
+        }
+      }
+      i {
+        font-size: 2.8rem;
+      }
     }
   }
 }

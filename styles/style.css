@@ -340,13 +340,13 @@ textarea {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0px auto;
-  border: 2px dotted red;
 }
 
 img {
@@ -382,9 +382,6 @@ h4,
 h5,
 h6 {
   font-family: "Didact Gothic", sans-serif;
-  text-align: center;
-  text-transform: lowercase;
-  font-weight: bolder;
 }
 
 p,
@@ -448,32 +445,66 @@ nav .masthead {
   text-align: center;
   color: #f7f7ff;
   background-color: #fe5f55;
-  padding: 5px 8px 12px 5px;
+  padding: 5px 8px 12px 10px;
 }
 
 nav ul {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #bdd5ea;
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 nav ul li {
-  padding: 0px 20px;
+  border-radius: 5px;
+}
+
+nav ul li:hover, nav ul li:focus, nav ul li:active {
+  background-color: #eeff03;
 }
 
 nav ul li a {
-  text-transform: uppercase;
+  text-transform: lowercase;
+  color: #191919;
+  padding: 11px 20px;
 }
 
 nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
-  color: #f7f7ff;
+  color: #191919;
 }
 
-footer {
+nav ul .order-button {
+  background-color: #f7f7ff;
+  border: solid #191919 2px;
+  margin-left: auto;
+}
+
+nav ul .order-button a {
+  color: #191919;
+}
+
+.form-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: pink;
+}
+
+footer .contact-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,16 +520,16 @@ footer {
           justify-content: space-between;
 }
 
-footer .contact-address,
-footer .contact-hours,
-footer .contact-social {
+footer .contact-footer .contact-address,
+footer .contact-footer .contact-hours,
+footer .contact-footer .contact-social {
   padding: 20px 10px;
   width: 33%;
 }
 
-footer .contact-address h3,
-footer .contact-hours h3,
-footer .contact-social h3 {
+footer .contact-footer .contact-address h3,
+footer .contact-footer .contact-hours h3,
+footer .contact-footer .contact-social h3 {
   text-align: center;
   text-transform: lowercase;
   font-weight: bolder;
@@ -506,42 +537,42 @@ footer .contact-social h3 {
   color: #eeff03;
 }
 
-footer .contact-address p,
-footer .contact-address a,
-footer .contact-address a:visited,
-footer .contact-hours p,
-footer .contact-hours a,
-footer .contact-hours a:visited,
-footer .contact-social p,
-footer .contact-social a,
-footer .contact-social a:visited {
+footer .contact-footer .contact-address p,
+footer .contact-footer .contact-address a,
+footer .contact-footer .contact-address a:visited,
+footer .contact-footer .contact-hours p,
+footer .contact-footer .contact-hours a,
+footer .contact-footer .contact-hours a:visited,
+footer .contact-footer .contact-social p,
+footer .contact-footer .contact-social a,
+footer .contact-footer .contact-social a:visited {
   font-size: 1.6rem;
   text-align: center;
   color: #f7f7ff;
 }
 
-footer .contact-address a:hover,
-footer .contact-address a:focus,
-footer .contact-address a:active,
-footer .contact-hours a:hover,
-footer .contact-hours a:focus,
-footer .contact-hours a:active,
-footer .contact-social a:hover,
-footer .contact-social a:focus,
-footer .contact-social a:active {
+footer .contact-footer .contact-address a:hover,
+footer .contact-footer .contact-address a:focus,
+footer .contact-footer .contact-address a:active,
+footer .contact-footer .contact-hours a:hover,
+footer .contact-footer .contact-hours a:focus,
+footer .contact-footer .contact-hours a:active,
+footer .contact-footer .contact-social a:hover,
+footer .contact-footer .contact-social a:focus,
+footer .contact-footer .contact-social a:active {
   color: #eeff03;
 }
 
-footer .contact-social .social-icons ul {
+footer .contact-footer .contact-social .social-icons ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-footer .contact-social .social-icons ul li {
+footer .contact-footer .contact-social .social-icons ul li {
   padding: 0px 10px;
 }
 
-footer .contact-social i {
+footer .contact-footer .contact-social i {
   font-size: 2.8rem;
 }

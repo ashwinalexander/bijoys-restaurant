@@ -3,23 +3,44 @@ nav {
     text-align: center;
     color: $light-color;
     background-color: $primary-color;
-    padding: 5px 8px 12px 5px;
+    padding: 5px 8px 12px 10px;
   }
   ul {
-    align-items: center;
-    justify-content: center;
-    background-color: $secondary-color;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 
     li {
-      padding: 0px 20px;
+      border-radius: 5px;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $accent-color;
+      }
+
       a {
-        text-transform: uppercase;
+        text-transform: lowercase;
+        color: $dark-color;
+        padding: 11px 20px;
         &:hover,
         &:focus,
         &:active {
-          color: $light-color;
+          color: $dark-color;
         }
       }
+    }
+
+    .order-button {
+      background-color: $light-color;
+      border: solid $dark-color 2px;
+
+      a {
+        color: $dark-color;
+      }
+
+      margin-left: auto;
     }
   }
 }

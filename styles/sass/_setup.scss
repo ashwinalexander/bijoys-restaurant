@@ -303,13 +303,13 @@ textarea {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   max-width: 1200px;
   width: 100%;
   margin: 0px auto;
-  border: 2px dotted red;
 }
 
 img {
