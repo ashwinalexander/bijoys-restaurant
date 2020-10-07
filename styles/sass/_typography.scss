@@ -2,7 +2,7 @@
 $primary-color: #fe5f55; //Orange Red Crayola
 $secondary-color: #bdd5ea; //Beau Blue
 $tertiary-color: #577399; //Blue Yonder
-$accent-color: #eeff03; //Black Coral
+$accent-color: #eeff03; //light fluorescent yellow
 $light-color: #f7f7ff; //Ghost White
 $dark-color: #191919; //eerie black
 
@@ -63,7 +63,8 @@ button {
   }
 }
 
-a {
+a,
+a:visited {
   font-size: 2.5rem;
   font-weight: bold;
   display: inline-block;

@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bijoy's restaurant</title>
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
     <!-- google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&display=swap"
@@ -24,15 +43,24 @@
           <div class="masthead">
             <h1><a href="/">bijoy's restaurant</a></h1>
           </div>
+          <!-- <div class="covid-update">
+            <p>
+              COVID-UPDATE: One-line covid update goes here and here and here
+            </p>
+          </div> -->
           <div>
             <ul>
               <li><a href="#">Menu</a></li>
-              <li><a href="#">Location</a></li>
-              <li><a href="#">Our Story</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#contact-us">Location</a></li>
+
+              <li><a href="#our-story">Our Story</a></li>
 
               <li class="order-button">
-                <a href="#">Order Now</a>
+                <a
+                  href="https://tableagent.com/toronto/bijoys-restaurant/"
+                  target="_blank"
+                  >Order Now</a
+                >
               </li>
             </ul>
           </div>
@@ -51,19 +79,40 @@
 
         <!-- button make reservation -->
       </section>
-      <section>
-        <!-- our story -->
+      <section id="our-story">
+        <div class="wrapper">
+          <div class="story flex-row">
+            <div class="story-image">
+              <img
+                src="./assets/bijoys restaurant  aurora dining area.JPG"
+                alt=""
+              />
+            </div>
+            <div class="story-note">
+              <h3>A world-class dining experience, now in Aurora</h3>
+              <p>
+                A petite 26 seater restaurant in a cozy house setting offering
+                eclectic, internationally inspired seasonal fare. Bijoy and
+                Sujata are chefs with 30 years of experience in 5-star hotels
+                and trained at the Culinary Institute of America in New York.
+                Their passion for cooking for others and their love of meeting
+                people, has culminated in this restaurant.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
-    <footer>
+    <footer id="contact-us">
       <div class="wrapper contact-footer">
         <div class="contact-address">
           <h3>contact us</h3>
 
           <p>
             <a href="https://goo.gl/maps/EHDgnSA3ka4NEz4NA"
-              >42 Temperance St. <br />
-              Aurora, ON L4G 2P7</a
+              >bijoy's restaurant<br />
+              42 temperance st. <br />
+              aurora, on L4G 2P7</a
             >
           </p>
 

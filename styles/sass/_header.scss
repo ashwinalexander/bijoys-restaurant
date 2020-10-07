@@ -1,46 +1,57 @@
 nav {
   .masthead {
     text-align: center;
-    color: $light-color;
     background-color: $primary-color;
-    padding: 5px 8px 12px 10px;
+    padding: 5px 8px 15px 10px;
+
+    h1 {
+      a {
+        color: $light-color;
+      }
+    }
   }
+
   ul {
-    margin: 10px 0px;
+    margin: 12px 0px;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
 
     li {
-      border-radius: 5px;
+      border-radius: 6px;
 
       &:hover,
       &:focus,
       &:active {
         background-color: $accent-color;
+        a {
+          color: $dark-color;
+        }
       }
 
       a {
         text-transform: lowercase;
         color: $dark-color;
         padding: 11px 20px;
-        &:hover,
-        &:focus,
-        &:active {
-          color: $dark-color;
-        }
       }
     }
 
     .order-button {
-      background-color: $light-color;
-      border: solid $dark-color 2px;
-
+      background-color: $accent-color;
+      border: 3px solid $accent-color;
+      margin-left: auto;
       a {
         color: $dark-color;
       }
 
-      margin-left: auto;
+      &:hover {
+        border: 3px solid $accent-color;
+        background-color: $dark-color;
+        a {
+          color: $accent-color;
+        }
+      }
     }
   }
 }

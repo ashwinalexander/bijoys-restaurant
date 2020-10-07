@@ -429,7 +429,8 @@ button:hover {
   color: #fe5f55;
 }
 
-a {
+a,
+a:visited {
   font-size: 2.5rem;
   font-weight: bold;
   display: inline-block;
@@ -437,19 +438,24 @@ a {
           text-decoration-line: none;
 }
 
-a:active, a:focus {
+a:active, a:focus,
+a:visited:active,
+a:visited:focus {
   outline: none;
 }
 
 nav .masthead {
   text-align: center;
-  color: #f7f7ff;
   background-color: #fe5f55;
-  padding: 5px 8px 12px 10px;
+  padding: 5px 8px 15px 10px;
+}
+
+nav .masthead h1 a {
+  color: #f7f7ff;
 }
 
 nav ul {
-  margin: 10px 0px;
+  margin: 12px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,11 +469,15 @@ nav ul {
 }
 
 nav ul li {
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 nav ul li:hover, nav ul li:focus, nav ul li:active {
   background-color: #eeff03;
+}
+
+nav ul li:hover a, nav ul li:focus a, nav ul li:active a {
+  color: #191919;
 }
 
 nav ul li a {
@@ -476,18 +486,42 @@ nav ul li a {
   padding: 11px 20px;
 }
 
-nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
-  color: #191919;
-}
-
 nav ul .order-button {
-  background-color: #f7f7ff;
-  border: solid #191919 2px;
+  background-color: #eeff03;
+  border: 3px solid #eeff03;
   margin-left: auto;
 }
 
 nav ul .order-button a {
   color: #191919;
+}
+
+nav ul .order-button:hover {
+  border: 3px solid #eeff03;
+  background-color: #191919;
+}
+
+nav ul .order-button:hover a {
+  color: #eeff03;
+}
+
+.story {
+  margin: 50px 0px;
+}
+
+.story .story-note {
+  width: 66%;
+  padding: 0px 40px;
+}
+
+.story .story-note h3 {
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+.story .story-image {
+  padding: 0px 0px 0px 0px;
+  width: 33%;
 }
 
 .form-subscribe {
