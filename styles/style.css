@@ -383,6 +383,7 @@ h5,
 h6 {
   font-family: "Didact Gothic", sans-serif;
   text-align: center;
+  font-size: 2.2rem;
 }
 
 p,
@@ -391,11 +392,12 @@ label,
 input,
 button {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
 }
 
 h1 {
   text-transform: lowercase;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -408,31 +410,15 @@ h3 {
   text-transform: uppercase;
 }
 
-input[type="radio"],
 p {
   font-size: 1.8rem;
   line-height: 2.8rem;
   letter-spacing: 0.01rem;
 }
 
-button {
-  font-size: 2.5rem;
-  text-align: center;
-  color: #fe5f55;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border: 4px solid transparent;
-  background-color: #577399;
-}
-
-button:hover {
-  border: 4px solid #eeff03;
-  color: #fe5f55;
-}
-
 a,
 a:visited {
-  font-size: 2.5rem;
+  font-size: 3.4rem;
   font-weight: bold;
   display: inline-block;
   -webkit-text-decoration-line: none;
@@ -445,18 +431,12 @@ a:visited:focus {
   outline: none;
 }
 
-nav .masthead {
-  text-align: center;
+header {
   background-color: #fe5f55;
-  padding: 5px 8px 15px 10px;
+  padding: 10px 8px 20px 10px;
 }
 
-nav .masthead h1 a {
-  color: #f7f7ff;
-}
-
-nav ul {
-  margin: 12px 0px;
+header .masthead-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -464,41 +444,24 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-nav ul li:hover, nav ul li:focus, nav ul li:active {
-  background-color: #eeff03;
+header .masthead-social .masthead a {
+  color: #f7f7ff;
 }
 
-nav ul li:hover a, nav ul li:focus a, nav ul li:active a {
-  color: #191919;
+header .masthead-social .social ul li {
+  padding: 5px 9px;
 }
 
-nav ul li a {
-  text-transform: lowercase;
-  color: #191919;
-  padding: 11px 20px;
+header .masthead-social .social ul li i {
+  color: #f7f7ff;
 }
 
-nav ul .order-button {
-  background-color: #eeff03;
-  border: 3px solid #eeff03;
-  margin-left: auto;
-}
-
-nav ul .order-button a {
-  color: #191919;
-}
-
-nav ul .order-button:hover {
-  border: 3px solid #eeff03;
-  background-color: #191919;
-}
-
-nav ul .order-button:hover a {
+header .masthead-social .social ul li i:hover {
   color: #eeff03;
 }
 
@@ -525,7 +488,7 @@ nav ul .order-button:hover a {
 }
 
 .story .story-image {
-  width: 33%;
+  width: 34%;
 }
 
 .form-subscribe {
