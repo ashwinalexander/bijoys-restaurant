@@ -382,6 +382,7 @@ h4,
 h5,
 h6 {
   font-family: "Didact Gothic", sans-serif;
+  text-align: center;
 }
 
 p,
@@ -468,10 +469,6 @@ nav ul {
           justify-content: flex-start;
 }
 
-nav ul li {
-  border-radius: 6px;
-}
-
 nav ul li:hover, nav ul li:focus, nav ul li:active {
   background-color: #eeff03;
 }
@@ -506,7 +503,14 @@ nav ul .order-button:hover a {
 }
 
 .story {
-  margin: 50px 0px;
+  padding: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .story .story-note {
@@ -514,13 +518,13 @@ nav ul .order-button:hover a {
   padding: 0px 40px;
 }
 
-.story .story-note h3 {
+.story .story-note h2 {
   padding-bottom: 20px;
   font-weight: 800;
+  text-transform: lowercase;
 }
 
 .story .story-image {
-  padding: 0px 0px 0px 0px;
   width: 33%;
 }
 
@@ -538,6 +542,68 @@ nav ul .order-button:hover a {
   background-color: pink;
 }
 
+.bijoys-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px 0px;
+}
+
+.bijoys-menu .menu-image {
+  width: 34%;
+}
+
+.bijoys-menu .download-menus {
+  width: 66%;
+}
+
+.bijoys-menu .download-menus h2 {
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.bijoys-menu .download-menus ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  padding: 10px 10px;
+  width: 50%;
+}
+
+.bijoys-menu .download-menus ul li {
+  background-color: #eeff03;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid #eeff03;
+}
+
+.bijoys-menu .download-menus ul li:hover {
+  background-color: #191919;
+}
+
+.bijoys-menu .download-menus ul li:hover a {
+  color: #eeff03;
+}
+
+.bijoys-menu .download-menus ul li a {
+  padding: 10px;
+  font-size: 1.7rem;
+  color: #191919;
+}
+
+footer {
+  background-color: #191919;
+}
+
 footer .contact-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -546,7 +612,6 @@ footer .contact-footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: #191919;
   color: #f7f7ff;
   padding: 10px;
   -webkit-box-pack: justify;
@@ -583,6 +648,7 @@ footer .contact-footer .contact-social a:visited {
   font-size: 1.6rem;
   text-align: center;
   color: #f7f7ff;
+  font-weight: bolder;
 }
 
 footer .contact-footer .contact-address a:hover,

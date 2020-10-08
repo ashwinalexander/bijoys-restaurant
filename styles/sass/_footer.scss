@@ -1,8 +1,9 @@
 footer {
+  background-color: $dark-color;
   .contact-footer {
     display: flex;
     flex-direction: row;
-    background-color: $dark-color;
+
     color: $light-color;
     padding: 10px;
     justify-content: space-between;
@@ -27,6 +28,7 @@ footer {
         font-size: 1.6rem;
         text-align: center;
         color: $light-color;
+        font-weight: bolder;
       }
       a:hover,
       a:focus,

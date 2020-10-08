@@ -1,16 +1,19 @@
 .story {
-  margin: 50px 0px;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: row;
+
   .story-note {
     width: 66%;
     padding: 0px 40px;
-    h3 {
+    h2 {
       padding-bottom: 20px;
       font-weight: 800;
+      text-transform: lowercase;
     }
   }
 
   .story-image {
-    padding: 0px 0px 0px 0px;
     width: 33%;
   }
 }
