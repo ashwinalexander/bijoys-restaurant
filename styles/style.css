@@ -465,6 +465,55 @@ header .masthead-social .social ul li i:hover {
   color: #eeff03;
 }
 
+nav .menus ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 12px 0px;
+}
+
+nav .menus ul li:hover, nav .menus ul li:focus, nav .menus ul li:active {
+  background-color: #eeff03;
+  cursor: pointer;
+}
+
+nav .menus ul li:hover a, nav .menus ul li:focus a, nav .menus ul li:active a {
+  color: #191919;
+}
+
+nav .menus ul li a {
+  text-transform: lowercase;
+  color: #191919;
+  padding: 11px 20px;
+  font-size: 1.8rem;
+}
+
+nav .menus ul .order-button {
+  background-color: #eeff03;
+  border: 3px solid #eeff03;
+  margin-left: auto;
+}
+
+nav .menus ul .order-button a {
+  color: #191919;
+}
+
+nav .menus ul .order-button:hover {
+  border: 3px solid #eeff03;
+  background-color: #191919;
+}
+
+nav .menus ul .order-button:hover a {
+  color: #eeff03;
+}
+
 .story {
   padding: 50px 0px;
   display: -webkit-box;
