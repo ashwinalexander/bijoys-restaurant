@@ -49,4 +49,14 @@ footer {
       }
     }
   }
+
+  .back-to-top {
+    padding-bottom: 20px;
+    text-align: center;
+    a {
+      font-size: 1.8rem;
+      color: $light-color;
+      padding: 10px;
+    }
+  }
 }

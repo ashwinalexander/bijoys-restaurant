@@ -1,3 +1,15 @@
 .specials {
   padding: 50px 0px;
+
+  .specials-list {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: Repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+
+    li {
+      padding: 20px;
+      background-color: pink;
+    }
+  }
 }

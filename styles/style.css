@@ -603,6 +603,20 @@ nav .menus ul .order-button:hover a {
   padding: 50px 0px;
 }
 
+.specials .specials-list {
+  padding: 50px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: Repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: Repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.specials .specials-list li {
+  padding: 20px;
+  background-color: pink;
+}
+
 .story {
   padding: 50px 0px;
   display: -webkit-box;
@@ -778,4 +792,15 @@ footer .contact-footer .contact-social .social-icons ul li {
 
 footer .contact-footer .contact-social i {
   font-size: 2.8rem;
+}
+
+footer .back-to-top {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+footer .back-to-top a {
+  font-size: 1.8rem;
+  color: #f7f7ff;
+  padding: 10px;
 }
