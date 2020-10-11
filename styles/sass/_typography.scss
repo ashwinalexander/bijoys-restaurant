@@ -44,12 +44,24 @@ h3 {
   text-transform: uppercase;
 }
 
-//body text
-
 p {
   font-size: 1.8rem;
   line-height: 2.8rem;
   letter-spacing: 0.01rem;
+}
+
+button {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $primary-color;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 4px solid transparent;
+  background-color: $primary-color;
+  &:hover {
+    border: 4px solid $accent-color;
+    color: $primary-color;
+  }
 }
 
 a,
@@ -58,8 +70,9 @@ a:visited {
   font-weight: bold;
   display: inline-block;
   text-decoration-line: none;
-  &:active,
-  &:focus {
-    outline: none;
-  }
+}
+
+//link border radius
+li {
+  border-radius: 6px;
 }

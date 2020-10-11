@@ -1,10 +1,11 @@
 header {
   background-color: $primary-color;
-  padding: 10px 8px 20px 10px;
+  padding: 10px 8px 15px 10px;
   .masthead-social {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0px 10px;
 
     .masthead {
       a {
@@ -14,7 +15,7 @@ header {
 
     .social {
       ul li {
-        padding: 5px 9px;
+        padding: 5px 12px;
         i {
           color: $light-color;
 
@@ -52,7 +53,7 @@ nav {
           font-size: 1.8rem;
         }
       }
-      //strat
+
       .order-button {
         background-color: $accent-color;
         border: 3px solid $accent-color;
@@ -74,29 +75,3 @@ nav {
     }
   }
 }
-
-//   ul {
-//     margin: 12px 0px;
-
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: flex-start;
-
-//     li {
-//       &:hover,
-//       &:focus,
-//       &:active {
-//         background-color: $accent-color;
-//         cursor: pointer;
-//         a {
-//           color: $dark-color;
-//         }
-//       }
-
-//       a {
-//         text-transform: lowercase;
-//         color: $dark-color;
-//         padding: 11px 20px;
-//         font-size: 1.8rem;
-//       }
-//     }
