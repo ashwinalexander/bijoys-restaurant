@@ -1,6 +1,6 @@
 //france inspired color palette https://coolors.co/495867-577399-bdd5ea-f7f7ff-fe5f55
 $primary-color: #fe5f55; //Orange Red Crayola
-$secondary-color: #bdd5ea; //Beau Blue
+$secondary-color: rgba(189, 213, 234, 0.35); //Beau Blue with some alpha
 $tertiary-color: #577399; //Blue Yonder
 $accent-color: #eeff03; //light fluorescent yellow
 $light-color: #f7f7ff; //Ghost White
@@ -74,5 +74,5 @@ a:visited {
 
 //link border radius
 li {
-  border-radius: 6px;
+  border-radius: 5px;
 }

@@ -441,7 +441,7 @@ a:visited {
 }
 
 li {
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 header {
@@ -579,7 +579,7 @@ nav .menus ul .order-button:hover a {
 }
 
 .bijoys-hero .btnNewsletter:hover {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .bijoys-hero .overlay {
@@ -597,6 +597,10 @@ nav .menus ul .order-button:hover a {
   font-size: 20px;
   padding: 20px;
   text-align: center;
+}
+
+.specials {
+  padding: 50px 0px;
 }
 
 .story {
@@ -648,6 +652,7 @@ nav .menus ul .order-button:hover a {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 50px 0px;
+  background-color: rgba(189, 213, 234, 0.35);
 }
 
 .bijoys-menu .menu-image {
