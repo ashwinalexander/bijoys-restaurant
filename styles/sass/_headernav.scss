@@ -1,6 +1,7 @@
 header {
   background-color: $primary-color;
   padding: 10px 8px 15px 10px;
+
   .masthead-social {
     display: flex;
     flex-direction: row;
@@ -29,12 +30,20 @@ header {
 }
 
 nav {
+  //uncomment for fixed nav bar
+  // background-color: $light-color;
+  // position: sticky;
+  // z-index: 1;
+  // top: 0px;
+  // width: 100%;
+  //fixed nav bar
   .menus {
     ul {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      margin: 12px 0px;
+
+      padding: 12px 0px;
       li {
         &:hover,
         &:focus,

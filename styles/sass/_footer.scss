@@ -54,9 +54,12 @@ footer {
     padding-bottom: 20px;
     text-align: center;
     a {
-      font-size: 1.8rem;
+      font-size: 1.4rem;
       color: $light-color;
       padding: 10px;
+      &:hover {
+        color: $accent-color;
+      }
     }
   }
 }

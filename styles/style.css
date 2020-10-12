@@ -384,6 +384,7 @@ h6 {
   font-family: "Didact Gothic", sans-serif;
   text-align: center;
   font-size: 2.2rem;
+  text-transform: lowercase;
 }
 
 p,
@@ -401,7 +402,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 900;
 }
 
@@ -490,7 +491,7 @@ nav .menus ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin: 12px 0px;
+  padding: 12px 0px;
 }
 
 nav .menus ul li:hover, nav .menus ul li:focus, nav .menus ul li:active {
@@ -542,44 +543,30 @@ nav .menus ul .order-button:hover a {
   position: absolute;
   top: 65%;
   border: 3px solid #eeff03;
-  margin: 5px;
+  color: #f7f7ff;
+  background-color: #eeff03;
   border-radius: 5px;
 }
 
 .bijoys-hero .btn a {
   text-transform: lowercase;
+  color: #191919;
+}
+
+.bijoys-hero .btn:hover {
+  background-color: #191919;
+}
+
+.bijoys-hero .btn:hover a {
+  color: #eeff03;
 }
 
 .bijoys-hero .btnReserve {
   right: 25%;
-  color: #f7f7ff;
-  background-color: #eeff03;
-}
-
-.bijoys-hero .btnReserve a {
-  color: #191919;
-}
-
-.bijoys-hero .btnReserve:hover {
-  background-color: #191919;
-}
-
-.bijoys-hero .btnReserve:hover a {
-  color: #eeff03;
 }
 
 .bijoys-hero .btnNewsletter {
   left: 25%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 3px solid #eeff03;
-}
-
-.bijoys-hero .btnNewsletter a {
-  color: #191919;
-}
-
-.bijoys-hero .btnNewsletter:hover {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .bijoys-hero .overlay {
@@ -612,9 +599,33 @@ nav .menus ul .order-button:hover a {
   grid-gap: 1rem;
 }
 
-.specials .specials-list li {
+.specials .specials-list div {
   padding: 20px;
-  background-color: pink;
+  background-color: rgba(189, 213, 234, 0.35);
+  color: #191919;
+  border: #eeff03 3px solid;
+  border-radius: 5px;
+}
+
+.specials .specials-list div h3 {
+  font-weight: bolder;
+  text-transform: lowercase;
+}
+
+.specials .specials-list div p {
+  padding: 20px 5px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.specials .specials-list div .gluten {
+  padding: 0px;
+}
+
+.specials .specials-list div .gluten .gf {
+  background-color: #eeff03;
+  padding: 10px;
+  font-size: 1.4rem;
 }
 
 .story {
@@ -800,7 +811,11 @@ footer .back-to-top {
 }
 
 footer .back-to-top a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #f7f7ff;
   padding: 10px;
+}
+
+footer .back-to-top a:hover {
+  color: #eeff03;
 }

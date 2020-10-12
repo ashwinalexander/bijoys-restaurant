@@ -12,19 +12,12 @@
     top: 65%;
 
     border: 3px solid $accent-color;
-    margin: 5px;
-    border-radius: 5px;
-    a {
-      text-transform: lowercase;
-    }
-  }
-
-  .btnReserve {
-    right: 25%;
     color: $light-color;
     background-color: $accent-color;
+    border-radius: 5px;
 
     a {
+      text-transform: lowercase;
       color: $dark-color;
     }
 
@@ -36,20 +29,12 @@
     }
   }
 
+  .btnReserve {
+    right: 25%;
+  }
+
   .btnNewsletter {
     left: 25%;
-
-    background-color: rgba(255, 255, 255, 0.5);
-
-    border: 3px solid $accent-color;
-
-    a {
-      color: $dark-color;
-    }
-
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.9);
-    }
   }
 
   .overlay {
