@@ -805,6 +805,10 @@ footer .contact-footer .contact-social i {
   font-size: 2.8rem;
 }
 
+footer .contact-footer .contact-hours p {
+  text-transform: lowercase;
+}
+
 footer .back-to-top {
   padding-bottom: 20px;
   text-align: center;
