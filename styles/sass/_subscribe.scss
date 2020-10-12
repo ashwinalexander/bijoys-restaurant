@@ -1,0 +1,46 @@
+.section-subscribe {
+  background-color: $secondary-color;
+
+  .form-subscribe {
+    padding: 50px 0px;
+    margin: 0px 110px;
+    text-transform: lowercase;
+
+    .form-grid {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    h2 {
+      margin-bottom: 35px;
+    }
+
+    .lblForm {
+      padding: 10px 15px;
+      font-size: 1.8rem;
+    }
+
+    .txtForm {
+      font-size: 1.8rem;
+      padding: 10px 10px;
+      border: 3px $accent-color solid;
+      background-color: $light-color;
+    }
+
+    .button {
+      font-size: 1.8rem;
+      margin-left: 50px;
+      padding: 10px 40px;
+      border: 3px solid $accent-color;
+      background-color: $accent-color;
+      font-weight: bolder;
+
+      &:hover,
+      :active,
+      :focus {
+        color: $accent-color;
+        background-color: $dark-color;
+      }
+    }
+  }
+}

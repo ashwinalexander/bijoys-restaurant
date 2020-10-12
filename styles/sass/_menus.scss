@@ -1,46 +1,48 @@
-.bijoys-menu {
-  display: flex;
-  flex-direction: row;
-  padding: 50px 0px;
-
+.menus_section {
   background-color: $secondary-color;
 
-  .menu-image {
-    width: 34%;
-  }
+  .bijoys-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0px;
 
-  .download-menus {
-    width: 66%;
-
-    h2 {
-      font-weight: bolder;
-      margin-bottom: 15px;
+    .menu-image {
+      width: 34%;
     }
-    ul {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-      padding: 10px 10px;
-      width: 50%;
 
-      li {
-        background-color: $accent-color;
-        margin-bottom: 10px;
-        text-align: center;
-        border: 2px solid $accent-color;
-        cursor: pointer;
+    .download-menus {
+      width: 66%;
 
-        &:hover {
-          background-color: $dark-color;
-          a {
-            color: $accent-color;
+      h2 {
+        font-weight: bolder;
+        margin-bottom: 15px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 10px 10px;
+        width: 50%;
+
+        li {
+          background-color: $accent-color;
+          margin-bottom: 10px;
+          text-align: center;
+          border: 2px solid $accent-color;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $dark-color;
+            a {
+              color: $accent-color;
+            }
           }
-        }
 
-        a {
-          padding: 10px 30px;
-          font-size: 1.7rem;
-          color: $dark-color;
+          a {
+            padding: 10px 30px;
+            font-size: 1.7rem;
+            color: $dark-color;
+          }
         }
       }
     }
