@@ -464,8 +464,14 @@ header .masthead-social {
   padding: 0px 10px;
 }
 
-header .masthead-social .masthead a {
+header .masthead-social .masthead a,
+header .masthead-social .masthead p {
   color: #f7f7ff;
+}
+
+header .masthead-social .masthead p {
+  padding-top: 3px;
+  font-size: 1.4rem;
 }
 
 header .masthead-social .social ul li {
@@ -649,7 +655,7 @@ nav .menus ul .order-button:hover a {
 }
 
 .section-subscribe .form-subscribe {
-  padding: 50px 0px;
+  padding: 30px 0px;
   margin: 0px 110px;
   text-transform: lowercase;
 }
@@ -683,18 +689,20 @@ nav .menus ul .order-button:hover a {
   background-color: #f7f7ff;
 }
 
-.section-subscribe .form-subscribe .button {
+.section-subscribe .form-subscribe button {
   font-size: 1.8rem;
   margin-left: 50px;
   padding: 10px 40px;
   border: 3px solid #eeff03;
   background-color: #eeff03;
   font-weight: bolder;
+  color: #191919;
+  text-transform: lowercase;
 }
 
-.section-subscribe .form-subscribe .button:hover,
-.section-subscribe .form-subscribe .button :active,
-.section-subscribe .form-subscribe .button :focus {
+.section-subscribe .form-subscribe button:hover,
+.section-subscribe .form-subscribe button :active,
+.section-subscribe .form-subscribe button :focus {
   color: #eeff03;
   background-color: #191919;
 }

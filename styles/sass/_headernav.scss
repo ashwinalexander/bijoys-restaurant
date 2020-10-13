@@ -9,8 +9,13 @@ header {
     padding: 0px 10px;
 
     .masthead {
-      a {
+      a,
+      p {
         color: $light-color;
+      }
+      p {
+        padding-top: 3px;
+        font-size: 1.4rem;
       }
     }
 

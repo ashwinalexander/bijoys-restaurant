@@ -2,7 +2,7 @@
   background-color: $secondary-color;
 
   .form-subscribe {
-    padding: 50px 0px;
+    padding: 30px 0px;
     margin: 0px 110px;
     text-transform: lowercase;
 
@@ -27,13 +27,15 @@
       background-color: $light-color;
     }
 
-    .button {
+    button {
       font-size: 1.8rem;
       margin-left: 50px;
       padding: 10px 40px;
       border: 3px solid $accent-color;
       background-color: $accent-color;
       font-weight: bolder;
+      color: $dark-color;
+      text-transform: lowercase;
 
       &:hover,
       :active,
