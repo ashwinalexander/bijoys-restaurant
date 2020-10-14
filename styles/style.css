@@ -469,7 +469,7 @@ header .masthead-social .masthead p {
   color: #f7f7ff;
 }
 
-header .masthead-social .masthead p {
+header .masthead-social .masthead p a {
   padding-top: 3px;
   font-size: 1.4rem;
 }
@@ -655,7 +655,7 @@ nav .menus ul .order-button:hover a {
 }
 
 .section-subscribe .form-subscribe {
-  padding: 30px 0px;
+  padding: 50px 0px;
   margin: 0px 110px;
   text-transform: lowercase;
 }
