@@ -1,18 +1,5 @@
-.covid-update {
-  background-color: $light-color;
-  padding: 5px 15px;
-  border: 5px solid $accent-color;
-
-  p {
-    color: $dark-color;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bolder;
-  }
-}
-
 header {
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 0px 0px;
   background-color: $primary-color;
 
   .masthead-social {
@@ -20,7 +7,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px 0px 10px;
+    padding: 5px 10px 10px 10px;
 
     .masthead {
       a,
@@ -46,6 +33,19 @@ header {
         }
       }
     }
+  }
+}
+
+.covid-update {
+  background-color: $accent-color;
+  padding: 5px 15px;
+  border: 5px solid $light-color;
+
+  p {
+    color: $dark-color;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
   }
 }
 

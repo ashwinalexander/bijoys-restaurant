@@ -445,21 +445,8 @@ li {
   border-radius: 5px;
 }
 
-.covid-update {
-  background-color: #f7f7ff;
-  padding: 5px 15px;
-  border: 5px solid #eeff03;
-}
-
-.covid-update p {
-  color: #191919;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: bolder;
-}
-
 header {
-  padding: 0px 0px 15px 0px;
+  padding: 0px 0px 0px 0px;
   background-color: #fe5f55;
 }
 
@@ -477,7 +464,7 @@ header .masthead-social {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 10px 0px 10px;
+  padding: 5px 10px 10px 10px;
 }
 
 header .masthead-social .masthead a,
@@ -500,6 +487,19 @@ header .masthead-social .social ul li i {
 
 header .masthead-social .social ul li i:hover {
   color: #eeff03;
+}
+
+.covid-update {
+  background-color: #eeff03;
+  padding: 5px 15px;
+  border: 5px solid #f7f7ff;
+}
+
+.covid-update p {
+  color: #191919;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
 }
 
 nav .menus ul {
