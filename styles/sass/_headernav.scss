@@ -1,12 +1,26 @@
+.covid-update {
+  background-color: $light-color;
+  padding: 5px 15px;
+  border: 5px solid $accent-color;
+
+  p {
+    color: $dark-color;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+  }
+}
+
 header {
+  padding: 0px 0px 15px 0px;
   background-color: $primary-color;
-  padding: 10px 8px 15px 10px;
 
   .masthead-social {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 10px;
+    align-items: center;
+    padding: 5px 10px 0px 10px;
 
     .masthead {
       a,
@@ -43,6 +57,7 @@ nav {
   // top: 0px;
   // width: 100%;
   //fixed nav bar
+
   .menus {
     ul {
       display: flex;
