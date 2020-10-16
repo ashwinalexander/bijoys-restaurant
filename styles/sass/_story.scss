@@ -21,3 +21,30 @@
     width: 34%;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .story-note {
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .story {
+    flex-direction: column;
+    padding: 25px 30px;
+
+    .story-note {
+      width: 100%;
+      padding: 20px 0px;
+      p {
+        font-size: 1.6rem;
+      }
+    }
+
+    .story-image {
+      width: 100%;
+    }
+  }
+}

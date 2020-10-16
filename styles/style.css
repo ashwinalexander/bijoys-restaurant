@@ -351,6 +351,7 @@ html {
 
 img {
   max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
 }
@@ -737,6 +738,32 @@ nav .menus ul .order-button:hover a {
   width: 34%;
 }
 
+@media screen and (max-width: 1000px) {
+  .story-note p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .story {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px 30px;
+  }
+  .story .story-note {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .story .story-note p {
+    font-size: 1.6rem;
+  }
+  .story .story-image {
+    width: 100%;
+  }
+}
+
 .section-subscribe {
   background-color: rgba(189, 213, 234, 0.4);
 }
@@ -747,7 +774,7 @@ nav .menus ul .order-button:hover a {
   text-transform: lowercase;
 }
 
-.section-subscribe .form-subscribe .form-grid {
+.section-subscribe .form-subscribe .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -794,9 +821,39 @@ nav .menus ul .order-button:hover a {
   background-color: #191919;
 }
 
-@media screen and (max-width: 1120px) {
-  .section-subscribe {
-    background-color: red;
+@media screen and (max-width: 690px) {
+  .section-subscribe .form-subscribe {
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .section-subscribe .form-subscribe {
+    padding: 0px;
+    margin: 0px;
+  }
+  .section-subscribe .form-subscribe form .form-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-subscribe .form-subscribe form .form-flex .label-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .section-subscribe .form-subscribe form .form-flex .element {
+    padding: 0px 0px 20px 0px;
+    margin: 0px auto;
+    border: 2px red solid;
+  }
+  .section-subscribe .form-subscribe form .form-flex .element button {
+    margin: 0px;
   }
 }
 
@@ -957,12 +1014,6 @@ footer .back-to-top a {
 
 footer .back-to-top a:hover {
   color: #eeff03;
-}
-
-@media screen and (max-width: 720px) {
-  p {
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (max-width: 690px) {

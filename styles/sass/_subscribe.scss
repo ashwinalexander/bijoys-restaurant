@@ -6,7 +6,7 @@
     margin: 0px 110px;
     text-transform: lowercase;
 
-    .form-grid {
+    .form-flex {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -47,8 +47,37 @@
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 690px) {
   .section-subscribe {
-    background-color: red;
+    .form-subscribe {
+      margin: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .section-subscribe {
+    .form-subscribe {
+      padding: 0px;
+      margin: 0px;
+      form {
+        .form-flex {
+          flex-direction: column;
+          .label-flex {
+            display: flex;
+            flex-direction: row;
+          }
+
+          .element {
+            padding: 0px 0px 20px 0px;
+            margin: 0px auto;
+            border: 2px red solid;
+            button {
+              margin: 0px;
+            }
+          }
+        }
+      }
+    }
   }
 }
