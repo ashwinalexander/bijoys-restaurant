@@ -684,8 +684,8 @@ nav .menus ul .order-button:hover a {
   padding: 50px 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: Repeat(auto-fit, minmax(320px, 1fr));
-      grid-template-columns: Repeat(auto-fit, minmax(320px, 1fr));
+  -ms-grid-columns: Repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -711,6 +711,15 @@ nav .menus ul .order-button:hover a {
 @media screen and (max-width: 1000px) {
   .specials .specials-list {
     padding: 50px 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .specials .specials-list {
+    padding: 50px 20px;
+  }
+  .specials .specials-list div p {
+    font-size: 1.4rem;
   }
 }
 
