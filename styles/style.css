@@ -708,6 +708,12 @@ nav .menus ul .order-button:hover a {
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 1000px) {
+  .specials .specials-list {
+    padding: 50px 30px;
+  }
+}
+
 .story {
   padding: 50px 0px;
   display: -webkit-box;
