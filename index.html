@@ -47,16 +47,38 @@
       src="https://kit.fontawesome.com/4da8d444f7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-74053809-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    <!-- mailchimp subscribe form styles  -->
-    <!-- <link
-      href="htts://cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-      rel="stylesheet"
-      type="text/css"
-    /> -->
+      gtag("config", "UA-74053809-1");
+    </script>
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <!-- The overlay -->
+    <div id="overlay-nav" class="overlay">
+      <!-- button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#bijoy-specials" onclick="closeNav()">specials</a>
+        <a href="#menus" onclick="closeNav()">menus</a>
+        <a href="#our-story" onclick="closeNav()">our story</a>
+        <a href="#subscribe-newsletter" onclick="closeNav()">updates</a>
+        <a href="#contact-us" onclick="closeNav()">location and hours</a>
+      </div>
+    </div>
     <header id="top">
       <div class="wrapper">
         <div class="masthead-social">
@@ -111,6 +133,16 @@
                     title="Tripadvisor"
                   ></i
                 ></a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="openNav()"
+                  aria-label="Main navigation"
+                >
+                  <i aria-hidden="true" class="fa fa-bars"></i>
+                </a>
               </li>
             </ul>
           </div>
@@ -168,7 +200,7 @@
 
     <main>
       <section>
-        <!-- hero image with description of what the website does -->
+        <!-- hero image  -->
         <div class="wrapper">
           <div class="bijoys-hero">
             <img
@@ -227,12 +259,10 @@
                   chicken breast pan fried with butter sauce. served with
                   seasonal vegetables and rice pilaff.
                 </p>
-                <!-- <p class="gluten"><span class="gf">gluten-free</span></p> -->
               </div>
               <div>
                 <h3>Pavlova</h3>
                 <p>meringue based dessert with lemon curd, kiwi and berries</p>
-                <!-- <p class="gluten"><span class="gf">gluten-free</span></p> -->
               </div>
               <div>
                 <h3>Sticky toffee pudding</h3>
@@ -256,25 +286,31 @@
               <h2>menus</h2>
               <ul>
                 <li>
-                  <a href="./assets/menus/bijoy's restaurant lunch menu.pdf"
+                  <a
+                    href="./assets/menus/bijoy's restaurant lunch menu.pdf"
+                    aria-label="download lunch menu"
                     >see lunch menu <i class="fas fa-arrow-circle-down"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     href="./assets/menus/bijoy's restaurant dinner take out menu.pdf"
+                    aria-label="download dinner takeout menu"
                     >see dinner takeout menu
                     <i class="fas fa-arrow-circle-down"></i
                   ></a>
                 </li>
                 <li>
-                  <a href="./assets/menus/bijoy's restaurant desserts menu.pdf"
+                  <a
+                    href="./assets/menus/bijoy's restaurant desserts menu.pdf"
+                    aria-label="download desserts menu"
                     >see desserts menu <i class="fas fa-arrow-circle-down"></i
                   ></a>
                 </li>
                 <li>
                   <a
                     href="./assets/menus/bijoy's restaurant  wine and beer list.pdf"
+                    aria-label="download wine and beer list"
                     >see wine and beer list
                     <i class="fas fa-arrow-circle-down"></i
                   ></a>
@@ -402,7 +438,6 @@
       <div class="wrapper contact-footer">
         <div class="contact-address">
           <h3>contact us</h3>
-
           <p>
             <a href="https://goo.gl/maps/EHDgnSA3ka4NEz4NA"
               >bijoy's restaurant<br />
@@ -480,8 +515,9 @@
       </div>
       <div class="wrapper">
         <div class="back-to-top">
-          <a href="#top"
-            >back to top <i class="far fa-arrow-alt-circle-up"></i
+          <a href="#top" aria-label="go back to top"
+            >back to top
+            <i class="far fa-arrow-alt-circle-up" aria-hidden="true"></i
           ></a>
         </div>
       </div>

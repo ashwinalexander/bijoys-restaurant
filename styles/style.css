@@ -445,6 +445,62 @@ li {
   border-radius: 5px;
 }
 
+/* The Overlay (background) */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: #191919;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* Position the content inside the overlay */
+  /* Position the close button (top right corner) */
+}
+
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #191919;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+.overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
+  color: #f7f7ff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-size: 4rem;
+  color: #191919;
+}
+
+.overlay .closebtn:hover, .overlay .closebtn:focus {
+  color: #f7f7ff;
+}
+
 header {
   padding: 0px 0px 0px 0px;
   background-color: #fe5f55;
@@ -487,6 +543,10 @@ header .masthead-social .social ul li i {
 
 header .masthead-social .social ul li i:hover {
   color: #eeff03;
+}
+
+header .masthead-social .social ul li .icon {
+  display: none;
 }
 
 .covid-update {
@@ -549,6 +609,13 @@ nav .menus ul .order-button:hover {
 
 nav .menus ul .order-button:hover a {
   color: #eeff03;
+}
+
+@media screen and (max-width: 750px) {
+  .social .icon {
+    float: left;
+    display: block;
+  }
 }
 
 .bijoys-hero {
@@ -727,6 +794,12 @@ nav .menus ul .order-button:hover a {
   background-color: #191919;
 }
 
+@media screen and (max-width: 1120px) {
+  .section-subscribe {
+    background-color: red;
+  }
+}
+
 .menus_section {
   background-color: rgba(189, 213, 234, 0.4);
 }
@@ -884,4 +957,29 @@ footer .back-to-top a {
 
 footer .back-to-top a:hover {
   color: #eeff03;
+}
+
+@media screen and (max-width: 720px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  footer .contact-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 30px;
+  }
+  footer .contact-footer .contact-address,
+  footer .contact-footer .contact-hours,
+  footer .contact-footer .contact-social {
+    padding-bottom: 20px;
+    width: 100%;
+  }
 }

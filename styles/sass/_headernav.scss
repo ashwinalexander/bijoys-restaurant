@@ -1,3 +1,52 @@
+/* The Overlay (background) */
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+
+  background-color: $dark-color;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+  /* Position the content inside the overlay */
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: $dark-color;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+
+      &:hover,
+      &:focus {
+        color: $light-color;
+      }
+    }
+  }
+  /* Position the close button (top right corner) */
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    text-decoration-line: none;
+    font-size: 4rem;
+    color: $dark-color;
+    &:hover,
+    &:focus {
+      color: $light-color;
+    }
+  }
+}
 header {
   padding: 0px 0px 0px 0px;
   background-color: $primary-color;
@@ -30,6 +79,9 @@ header {
           &:hover {
             color: $accent-color;
           }
+        }
+        .icon {
+          display: none;
         }
       }
     }
@@ -102,6 +154,15 @@ nav {
       }
 
       //end
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .social {
+    .icon {
+      float: left;
+      display: block;
     }
   }
 }
