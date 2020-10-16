@@ -4,7 +4,7 @@
   .specials-list {
     padding: 50px 0px;
     display: grid;
-    grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: Repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
 
     div {
@@ -37,6 +37,7 @@
 @media screen and (max-width: 400px) {
   .specials {
     .specials-list {
+      grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
       padding: 50px 20px;
 
       div {
@@ -44,13 +45,6 @@
           font-size: 1.4rem;
         }
       }
-    }
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .specials {
-    .specials-list {
     }
   }
 }

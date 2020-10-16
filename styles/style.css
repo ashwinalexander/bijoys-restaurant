@@ -446,7 +446,7 @@ li {
   border-radius: 5px;
 }
 
-/* The Overlay (background) */
+/* The Overlay (background for smaller screens) */
 .overlay {
   height: 0%;
   width: 100%;
@@ -612,6 +612,18 @@ nav .menus ul .order-button:hover a {
   color: #eeff03;
 }
 
+@media screen and (max-width: 1100px) {
+  .covid-update p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .covid-update p {
+    font-size: 1.2rem;
+  }
+}
+
 @media screen and (max-width: 750px) {
   .social .icon {
     float: left;
@@ -684,8 +696,8 @@ nav .menus ul .order-button:hover a {
   padding: 50px 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: Repeat(auto-fit, minmax(280px, 1fr));
-      grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
+  -ms-grid-columns: Repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: Repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
 }
 
@@ -716,6 +728,8 @@ nav .menus ul .order-button:hover a {
 
 @media screen and (max-width: 400px) {
   .specials .specials-list {
+    -ms-grid-columns: Repeat(auto-fit, minmax(280px, 1fr));
+        grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
     padding: 50px 20px;
   }
   .specials .specials-list div p {
