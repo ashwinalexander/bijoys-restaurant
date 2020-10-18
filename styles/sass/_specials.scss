@@ -38,11 +38,13 @@
   .specials {
     .specials-list {
       grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
-      padding: 50px 20px;
+      padding: 30px 20px;
 
       div {
+        padding: 20px 10px;
         p {
           font-size: 1.4rem;
+          padding: 20px 5px 10px 5px;
         }
       }
     }

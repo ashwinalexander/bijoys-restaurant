@@ -484,7 +484,7 @@ li {
   /* Transition effects on hover (color) */
 }
 
-.overlay .overlay-content a:hover, .overlay .overlay-content a:focus {
+.overlay .overlay-content a:hover, .overlay .overlay-content a:focus, .overlay .overlay-content a:active {
   color: #f7f7ff;
 }
 
@@ -498,7 +498,7 @@ li {
   color: #191919;
 }
 
-.overlay .closebtn:hover, .overlay .closebtn:focus {
+.overlay .closebtn:hover, .overlay .closebtn:focus, .overlay .closebtn:active {
   color: #f7f7ff;
 }
 
@@ -542,7 +542,7 @@ header .masthead-social .social ul li i {
   color: #f7f7ff;
 }
 
-header .masthead-social .social ul li i:hover {
+header .masthead-social .social ul li i:hover, header .masthead-social .social ul li i:focus, header .masthead-social .social ul li i:active {
   color: #eeff03;
 }
 
@@ -554,6 +554,7 @@ header .masthead-social .social ul li .icon {
   background-color: #eeff03;
   padding: 5px 15px;
   border: 5px solid #f7f7ff;
+  border-radius: 7px;
 }
 
 .covid-update p {
@@ -561,6 +562,64 @@ header .masthead-social .social ul li .icon {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bolder;
+}
+
+nav .mobile-menus {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 10px 0px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .mobile-menus div .mailing-button {
+  background-color: #f7f7ff;
+  border: 3px solid #eeff03;
+  width: 100%;
+  text-align: center;
+}
+
+nav .mobile-menus div .mailing-button a {
+  text-transform: lowercase;
+  color: #191919;
+  padding: 11px 20px;
+  font-size: 1.8rem;
+}
+
+nav .mobile-menus div .mailing-button:hover, nav .mobile-menus div .mailing-button:focus, nav .mobile-menus div .mailing-button:active {
+  border: 3px solid #eeff03;
+  background-color: #eeff03;
+}
+
+nav .mobile-menus div .mailing-button:hover a, nav .mobile-menus div .mailing-button:focus a, nav .mobile-menus div .mailing-button:active a {
+  color: #191919;
+}
+
+nav .mobile-menus div .order-button {
+  background-color: #eeff03;
+  border: 3px solid #eeff03;
+  width: 100%;
+  text-align: center;
+}
+
+nav .mobile-menus div .order-button a {
+  text-transform: lowercase;
+  color: #191919;
+  padding: 11px 20px;
+  font-size: 1.8rem;
+}
+
+nav .mobile-menus div .order-button:hover, nav .mobile-menus div .order-button:focus, nav .mobile-menus div .order-button:active {
+  border: 3px solid #eeff03;
+  background-color: #191919;
+}
+
+nav .mobile-menus div .order-button:hover a, nav .mobile-menus div .order-button:focus a, nav .mobile-menus div .order-button:active a {
+  color: #eeff03;
 }
 
 nav .menus ul {
@@ -603,18 +662,52 @@ nav .menus ul .order-button a {
   color: #191919;
 }
 
-nav .menus ul .order-button:hover {
+nav .menus ul .order-button:hover, nav .menus ul .order-button:focus, nav .menus ul .order-button:active {
   border: 3px solid #eeff03;
   background-color: #191919;
 }
 
-nav .menus ul .order-button:hover a {
+nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .menus ul .order-button:active a {
   color: #eeff03;
 }
 
 @media screen and (max-width: 1100px) {
+  nav .menus ul li a {
+    padding: 11px 10px;
+  }
   .covid-update p {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav .menus ul li a {
+    padding: 11px 5px 11px 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav .menus {
+    display: none;
+  }
+  .covid-update {
+    background-color: #0b4f6c;
+  }
+  .covid-update p {
+    font-size: 1.2rem;
+    color: #f7f7ff;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .social .icon {
+    float: left;
+    display: block;
+  }
+  nav .mobile-menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -624,10 +717,19 @@ nav .menus ul .order-button:hover a {
   }
 }
 
-@media screen and (max-width: 750px) {
-  .social .icon {
-    float: left;
-    display: block;
+@media screen and (max-width: 500px) {
+  nav .mobile-menus div .mailing-button a,
+  nav .mobile-menus div .order-button a {
+    font-size: 1.6rem;
+    padding: 11px 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav .mobile-menus div .mailing-button a,
+  nav .mobile-menus div .order-button a {
+    font-size: 1.6rem;
+    padding: 11px 5px;
   }
 }
 
@@ -688,6 +790,40 @@ nav .menus ul .order-button:hover a {
   text-align: center;
 }
 
+@media screen and (max-width: 1150px) {
+  .bijoys-hero .btnReserve {
+    right: 15%;
+  }
+  .bijoys-hero .btnNewsletter {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bijoys-hero .btnReserve {
+    right: 12%;
+  }
+  .bijoys-hero .btnNewsletter {
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bijoys-hero .btnReserve {
+    right: 10%;
+  }
+  .bijoys-hero .btnNewsletter {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .bijoys-hero .btnReserve,
+  .bijoys-hero .btnNewsletter {
+    display: none;
+  }
+}
+
 .specials {
   padding: 50px 0px;
 }
@@ -730,10 +866,14 @@ nav .menus ul .order-button:hover a {
   .specials .specials-list {
     -ms-grid-columns: Repeat(auto-fit, minmax(280px, 1fr));
         grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
-    padding: 50px 20px;
+    padding: 30px 20px;
+  }
+  .specials .specials-list div {
+    padding: 20px 10px;
   }
   .specials .specials-list div p {
     font-size: 1.4rem;
+    padding: 20px 5px 10px 5px;
   }
 }
 
@@ -1008,7 +1148,7 @@ nav .menus ul .order-button:hover a {
 
 @media screen and (max-width: 370px) {
   .menus_section .bijoys-menu .download-menus ul li a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 10px 0px;
   }
 }

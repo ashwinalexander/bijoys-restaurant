@@ -53,3 +53,48 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 1150px) {
+  .bijoys-hero {
+    .btnReserve {
+      right: 15%;
+    }
+
+    .btnNewsletter {
+      left: 15%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .bijoys-hero {
+    .btnReserve {
+      right: 12%;
+    }
+
+    .btnNewsletter {
+      left: 12%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bijoys-hero {
+    .btnReserve {
+      right: 10%;
+    }
+
+    .btnNewsletter {
+      left: 10%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .bijoys-hero {
+    .btnReserve,
+    .btnNewsletter {
+      display: none;
+    }
+  }
+}

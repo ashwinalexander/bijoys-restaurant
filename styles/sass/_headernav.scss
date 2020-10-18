@@ -28,7 +28,8 @@
       transition: 0.3s; /* Transition effects on hover (color) */
 
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: $light-color;
       }
     }
@@ -42,7 +43,8 @@
     font-size: 4rem;
     color: $dark-color;
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
       color: $light-color;
     }
   }
@@ -77,7 +79,9 @@ header {
         i {
           color: $light-color;
 
-          &:hover {
+          &:hover,
+          &:focus,
+          &:active {
             color: $accent-color;
           }
         }
@@ -93,6 +97,7 @@ header {
   background-color: $accent-color;
   padding: 5px 15px;
   border: 5px solid $light-color;
+  border-radius: 7px;
 
   p {
     color: $dark-color;
@@ -109,15 +114,72 @@ nav {
   // z-index: 1;
   // top: 0px;
   // width: 100%;
-  //fixed nav bar
+  //fixed nav
+
+  .mobile-menus {
+    display: none;
+    flex-direction: row;
+    padding: 10px 0px;
+    justify-content: space-evenly;
+    div {
+      .mailing-button {
+        background-color: $light-color;
+        border: 3px solid $accent-color;
+        width: 100%;
+        text-align: center;
+
+        a {
+          text-transform: lowercase;
+          color: $dark-color;
+          padding: 11px 20px;
+          font-size: 1.8rem;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: 3px solid $accent-color;
+          background-color: $accent-color;
+          a {
+            color: $dark-color;
+          }
+        }
+      }
+
+      .order-button {
+        background-color: $accent-color;
+        border: 3px solid $accent-color;
+
+        width: 100%;
+        text-align: center;
+
+        a {
+          text-transform: lowercase;
+          color: $dark-color;
+          padding: 11px 20px;
+          font-size: 1.8rem;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+          border: 3px solid $accent-color;
+          background-color: $dark-color;
+          a {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
 
   .menus {
     ul {
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-
       padding: 12px 0px;
+
       li {
         &:hover,
         &:focus,
@@ -145,7 +207,9 @@ nav {
           color: $dark-color;
         }
 
-        &:hover {
+        &:hover,
+        &:focus,
+        &:active {
           border: 3px solid $accent-color;
           background-color: $dark-color;
           a {
@@ -160,9 +224,57 @@ nav {
 }
 
 @media screen and (max-width: 1100px) {
+  nav {
+    .menus {
+      ul li a {
+        padding: 11px 10px;
+      }
+    }
+  }
+
   .covid-update {
     p {
       font-size: 1.2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  nav {
+    .menus {
+      ul li a {
+        padding: 11px 5px 11px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  nav {
+    .menus {
+      display: none;
+    }
+  }
+
+  .covid-update {
+    p {
+      font-size: 1.2rem;
+      color: $light-color;
+    }
+    background-color: $tertiary-color;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .social {
+    .icon {
+      float: left;
+      display: block;
+    }
+  }
+  nav {
+    .mobile-menus {
+      display: flex;
     }
   }
 }
@@ -175,11 +287,26 @@ nav {
   }
 }
 
-@media screen and (max-width: 750px) {
-  .social {
-    .icon {
-      float: left;
-      display: block;
+@media screen and (max-width: 500px) {
+  nav {
+    .mobile-menus {
+      div .mailing-button a,
+      div .order-button a {
+        font-size: 1.6rem;
+        padding: 11px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  nav {
+    .mobile-menus {
+      div .mailing-button a,
+      div .order-button a {
+        font-size: 1.6rem;
+        padding: 11px 5px;
+      }
     }
   }
 }
