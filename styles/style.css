@@ -563,7 +563,7 @@ header .masthead-social .hamburger {
 
 header .masthead-social .hamburger i {
   color: #f7f7ff;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i:focus, header .masthead-social .hamburger i:active {
@@ -970,7 +970,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
     font-size: 1.6rem;
   }
   .specials .specials-list div p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     padding: 10px 5px 10px 5px;
   }
 }
