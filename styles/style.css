@@ -1056,9 +1056,9 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section-subscribe .form-subscribe .form-flex .label-flex {
@@ -1073,7 +1073,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .section-subscribe .form-subscribe .form-flex .label-flex div {
-  padding: 5px;
+  padding: 4px 0px;
 }
 
 .section-subscribe .form-subscribe .form-flex .label-flex .lblForm {
@@ -1093,7 +1093,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .section-subscribe .form-subscribe .clear button {
   font-size: 1.8rem;
-  margin-top: 20px;
   margin-left: 50px;
   padding: 10px 40px;
   border: 3px solid #eeff03;

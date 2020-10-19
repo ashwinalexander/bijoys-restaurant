@@ -14,15 +14,14 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-      justify-content: center;
-
+      justify-content: space-between;
       .label-flex {
         display: flex;
         flex-direction: column;
         padding: 0px 30px;
 
         div {
-          padding: 5px;
+          padding: 4px 0px;
         }
 
         .lblForm {
@@ -41,7 +40,7 @@
       padding: 5px;
       button {
         font-size: 1.8rem;
-        margin-top: 20px;
+        // margin-top: 20px;
         margin-left: 50px;
 
         padding: 10px 40px;
