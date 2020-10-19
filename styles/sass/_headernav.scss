@@ -59,9 +59,13 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px 10px 10px;
+
+    padding: 5px 10px 10px 30px;
 
     .masthead {
+      h1 {
+        text-align: left;
+      }
       a,
       p {
         color: $light-color;
@@ -85,8 +89,21 @@ header {
             color: $accent-color;
           }
         }
-        .icon {
-          display: none;
+      }
+    }
+
+    .hamburger {
+      display: none;
+      padding: 10px 20px;
+
+      i {
+        color: $light-color;
+        font-size: 3.5rem;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $accent-color;
         }
       }
     }
@@ -104,6 +121,7 @@ header {
     text-align: center;
     font-size: 1.4rem;
     font-weight: bolder;
+    line-height: 2.2rem;
   }
 }
 
@@ -120,7 +138,9 @@ nav {
     display: none;
     flex-direction: row;
     padding: 10px 0px;
+
     justify-content: space-evenly;
+    background-color: $secondary-color;
     div {
       .mailing-button {
         background-color: $light-color;
@@ -256,6 +276,18 @@ nav {
     }
   }
 
+  header {
+    .masthead-social {
+      .hamburger {
+        display: block;
+      }
+
+      .social {
+        display: none;
+      }
+    }
+  }
+
   .covid-update {
     p {
       font-size: 1.2rem;
@@ -280,6 +312,19 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
+  header {
+    .masthead-social {
+      .masthead {
+        h1 a {
+          font-size: 3rem;
+        }
+
+        p a {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
   .covid-update {
     p {
       font-size: 1.2rem;
@@ -288,8 +333,23 @@ nav {
 }
 
 @media screen and (max-width: 500px) {
+  header {
+    .masthead-social {
+      .masthead {
+        h1 a {
+          font-size: 2.5rem;
+        }
+
+        p a {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
   nav {
     .mobile-menus {
+      padding: 16px 0px;
       div .mailing-button a,
       div .order-button a {
         font-size: 1.6rem;
@@ -299,7 +359,70 @@ nav {
   }
 }
 
+@media screen and (max-width: 470px) {
+  header {
+    .masthead-social {
+      .masthead {
+        h1 a {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header {
+    .masthead-social {
+      padding-left: 15px;
+      padding-bottom: 0px;
+      .masthead {
+        h1 {
+          padding-bottom: 20px;
+
+          a {
+            padding-top: 0px;
+            font-size: 2.3rem;
+          }
+        }
+
+        p {
+          display: none;
+        }
+      }
+
+      .hamburger {
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 360px) {
+  header {
+    .masthead-social {
+      .masthead {
+        align-items: center;
+        align-content: center;
+
+        h1 {
+          a {
+            font-size: 2.1rem;
+            padding: 0px;
+          }
+        }
+
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
   nav {
     .mobile-menus {
       div .mailing-button a,

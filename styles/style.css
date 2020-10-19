@@ -521,7 +521,11 @@ header .masthead-social {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px 10px 30px;
+}
+
+header .masthead-social .masthead h1 {
+  text-align: left;
 }
 
 header .masthead-social .masthead a,
@@ -546,8 +550,18 @@ header .masthead-social .social ul li i:hover, header .masthead-social .social u
   color: #eeff03;
 }
 
-header .masthead-social .social ul li .icon {
+header .masthead-social .hamburger {
   display: none;
+  padding: 10px 20px;
+}
+
+header .masthead-social .hamburger i {
+  color: #f7f7ff;
+  font-size: 3.5rem;
+}
+
+header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i:focus, header .masthead-social .hamburger i:active {
+  color: #eeff03;
 }
 
 .covid-update {
@@ -562,6 +576,7 @@ header .masthead-social .social ul li .icon {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bolder;
+  line-height: 2.2rem;
 }
 
 nav .mobile-menus {
@@ -574,6 +589,7 @@ nav .mobile-menus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: rgba(189, 213, 234, 0.4);
 }
 
 nav .mobile-menus div .mailing-button {
@@ -690,6 +706,12 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   nav .menus {
     display: none;
   }
+  header .masthead-social .hamburger {
+    display: block;
+  }
+  header .masthead-social .social {
+    display: none;
+  }
   .covid-update {
     background-color: #0b4f6c;
   }
@@ -712,12 +734,27 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 @media screen and (max-width: 700px) {
+  header .masthead-social .masthead h1 a {
+    font-size: 3rem;
+  }
+  header .masthead-social .masthead p a {
+    font-size: 1.3rem;
+  }
   .covid-update p {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 500px) {
+  header .masthead-social .masthead h1 a {
+    font-size: 2.5rem;
+  }
+  header .masthead-social .masthead p a {
+    font-size: 1.2rem;
+  }
+  nav .mobile-menus {
+    padding: 16px 0px;
+  }
   nav .mobile-menus div .mailing-button a,
   nav .mobile-menus div .order-button a {
     font-size: 1.6rem;
@@ -725,7 +762,50 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   }
 }
 
+@media screen and (max-width: 470px) {
+  header .masthead-social .masthead h1 a {
+    font-size: 2.5rem;
+  }
+  header .masthead-social .masthead p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  header .masthead-social {
+    padding-left: 15px;
+    padding-bottom: 0px;
+  }
+  header .masthead-social .masthead h1 {
+    padding-bottom: 20px;
+  }
+  header .masthead-social .masthead h1 a {
+    padding-top: 0px;
+    font-size: 2.3rem;
+  }
+  header .masthead-social .masthead p {
+    display: none;
+  }
+  header .masthead-social .hamburger {
+    padding-right: 10px;
+  }
+}
+
 @media screen and (max-width: 360px) {
+  header .masthead-social .masthead {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  header .masthead-social .masthead h1 a {
+    font-size: 2.1rem;
+    padding: 0px;
+  }
+  header .masthead-social .masthead p {
+    display: none;
+  }
   nav .mobile-menus div .mailing-button a,
   nav .mobile-menus div .order-button a {
     font-size: 1.6rem;
