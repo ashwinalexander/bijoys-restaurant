@@ -6,42 +6,58 @@
     margin: 0px 110px;
     text-transform: lowercase;
 
+    h2 {
+      margin-bottom: 25px;
+    }
+
     .form-flex {
       display: flex;
       flex-direction: row;
-      align-items: center;
-    }
-    h2 {
-      margin-bottom: 35px;
-    }
+      align-items: flex-end;
+      justify-content: center;
 
-    .lblForm {
-      padding: 10px 15px;
-      font-size: 1.8rem;
+      .label-flex {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 30px;
+
+        div {
+          padding: 5px;
+        }
+
+        .lblForm {
+          font-size: 1.8rem;
+        }
+
+        .txtForm {
+          font-size: 1.8rem;
+          padding: 10px 10px;
+          border: 3px $accent-color solid;
+          background-color: $light-color;
+        }
+      }
     }
+    .clear {
+      padding: 5px;
+      button {
+        font-size: 1.8rem;
+        margin-top: 20px;
+        margin-left: 50px;
 
-    .txtForm {
-      font-size: 1.8rem;
-      padding: 10px 10px;
-      border: 3px $accent-color solid;
-      background-color: $light-color;
-    }
+        padding: 10px 40px;
+        border: 3px solid $accent-color;
+        background-color: $accent-color;
+        font-weight: bolder;
+        color: $dark-color;
 
-    button {
-      font-size: 1.8rem;
-      margin-left: 50px;
-      padding: 10px 40px;
-      border: 3px solid $accent-color;
-      background-color: $accent-color;
-      font-weight: bolder;
-      color: $dark-color;
-      text-transform: lowercase;
+        text-transform: lowercase;
 
-      &:hover,
-      :active,
-      :focus {
-        color: $accent-color;
-        background-color: $dark-color;
+        &:hover,
+        :active,
+        :focus {
+          color: $accent-color;
+          background-color: $dark-color;
+        }
       }
     }
   }
@@ -71,7 +87,7 @@
           .element {
             padding: 0px 0px 20px 0px;
             margin: 0px auto;
-            border: 2px red solid;
+
             button {
               margin: 0px;
             }

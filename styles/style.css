@@ -1041,6 +1041,10 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   text-transform: lowercase;
 }
 
+.section-subscribe .form-subscribe h2 {
+  margin-bottom: 25px;
+}
+
 .section-subscribe .form-subscribe .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,29 +1053,47 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.section-subscribe .form-subscribe h2 {
-  margin-bottom: 35px;
+.section-subscribe .form-subscribe .form-flex .label-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0px 30px;
 }
 
-.section-subscribe .form-subscribe .lblForm {
-  padding: 10px 15px;
+.section-subscribe .form-subscribe .form-flex .label-flex div {
+  padding: 5px;
+}
+
+.section-subscribe .form-subscribe .form-flex .label-flex .lblForm {
   font-size: 1.8rem;
 }
 
-.section-subscribe .form-subscribe .txtForm {
+.section-subscribe .form-subscribe .form-flex .label-flex .txtForm {
   font-size: 1.8rem;
   padding: 10px 10px;
   border: 3px #eeff03 solid;
   background-color: #f7f7ff;
 }
 
-.section-subscribe .form-subscribe button {
+.section-subscribe .form-subscribe .clear {
+  padding: 5px;
+}
+
+.section-subscribe .form-subscribe .clear button {
   font-size: 1.8rem;
+  margin-top: 20px;
   margin-left: 50px;
   padding: 10px 40px;
   border: 3px solid #eeff03;
@@ -1081,9 +1103,9 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   text-transform: lowercase;
 }
 
-.section-subscribe .form-subscribe button:hover,
-.section-subscribe .form-subscribe button :active,
-.section-subscribe .form-subscribe button :focus {
+.section-subscribe .form-subscribe .clear button:hover,
+.section-subscribe .form-subscribe .clear button :active,
+.section-subscribe .form-subscribe .clear button :focus {
   color: #eeff03;
   background-color: #191919;
 }
@@ -1117,7 +1139,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   .section-subscribe .form-subscribe form .form-flex .element {
     padding: 0px 0px 20px 0px;
     margin: 0px auto;
-    border: 2px red solid;
   }
   .section-subscribe .form-subscribe form .form-flex .element button {
     margin: 0px;
