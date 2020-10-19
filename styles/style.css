@@ -1033,12 +1033,14 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .section-subscribe {
   background-color: rgba(189, 213, 234, 0.4);
+  border: 2px solid red;
 }
 
 .section-subscribe .form-subscribe {
-  padding: 50px 0px;
+  padding: 30px 0px;
   margin: 0px 110px;
   text-transform: lowercase;
+  border: 2px solid green;
 }
 
 .section-subscribe .form-subscribe h2 {
@@ -1093,7 +1095,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .section-subscribe .form-subscribe .clear button {
   font-size: 1.8rem;
-  margin-left: 50px;
   padding: 10px 40px;
   border: 3px solid #eeff03;
   background-color: #eeff03;
@@ -1109,38 +1110,40 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   background-color: #191919;
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1090px) {
   .section-subscribe .form-subscribe {
-    margin: 0px;
+    margin: 0px 80px;
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 1020px) {
   .section-subscribe .form-subscribe {
-    padding: 0px;
-    margin: 0px;
+    margin: 0px 40px;
   }
-  .section-subscribe .form-subscribe form .form-flex {
+}
+
+@media screen and (max-width: 1020px) {
+  .section-subscribe .form-subscribe {
+    margin: 0px 0px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-subscribe .form-subscribe .form-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .section-subscribe .form-subscribe form .form-flex .label-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .section-subscribe .form-subscribe form .form-flex .element {
-    padding: 0px 0px 20px 0px;
-    margin: 0px auto;
-  }
-  .section-subscribe .form-subscribe form .form-flex .element button {
-    margin: 0px;
+}
+
+@media screen and (max-width: 500px) {
+  .section-subscribe .form-subscribe .form-flex input,
+  .section-subscribe .form-subscribe .form-flex button {
+    font-size: 1.6rem;
   }
 }
 
