@@ -462,7 +462,7 @@ li {
   /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #191919;
+  background-color: #0b4f6c;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -482,7 +482,7 @@ li {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #191919;
+  color: #f7f7ff;
   display: block;
   /* Display block instead of inline */
   -webkit-transition: 0.3s;
@@ -491,7 +491,7 @@ li {
 }
 
 .overlay .overlay-content a:hover, .overlay .overlay-content a:focus, .overlay .overlay-content a:active {
-  color: #f7f7ff;
+  color: #eeff03;
 }
 
 .overlay .closebtn {
@@ -501,11 +501,11 @@ li {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   font-size: 4rem;
-  color: #191919;
+  color: #f7f7ff;
 }
 
 .overlay .closebtn:hover, .overlay .closebtn:focus, .overlay .closebtn:active {
-  color: #f7f7ff;
+  color: #eeff03;
 }
 
 header {

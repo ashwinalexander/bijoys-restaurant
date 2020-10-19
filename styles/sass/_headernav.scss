@@ -7,7 +7,7 @@
   left: 0;
   top: 0;
 
-  background-color: $dark-color;
+  background-color: $tertiary-color;
 
   overflow-x: hidden;
   transition: 0.5s;
@@ -23,14 +23,14 @@
       padding: 8px;
       text-decoration: none;
       font-size: 36px;
-      color: $dark-color;
+      color: $light-color;
       display: block; /* Display block instead of inline */
       transition: 0.3s; /* Transition effects on hover (color) */
 
       &:hover,
       &:focus,
       &:active {
-        color: $light-color;
+        color: $accent-color;
       }
     }
   }
@@ -41,11 +41,11 @@
     right: 45px;
     text-decoration-line: none;
     font-size: 4rem;
-    color: $dark-color;
+    color: $light-color;
     &:hover,
     &:focus,
     &:active {
-      color: $light-color;
+      color: $accent-color;
     }
   }
 }
