@@ -446,6 +446,12 @@ li {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 700px) {
+  p {
+    line-height: 2.5rem;
+  }
+}
+
 /* The Overlay (background for smaller screens) */
 .overlay {
   height: 0%;
@@ -937,23 +943,35 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 @media screen and (max-width: 1000px) {
+  .specials {
+    padding: 25px 0px;
+  }
   .specials .specials-list {
-    padding: 50px 30px;
+    padding: 25px 30px;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 658px) {
+  .specials .specials-list div {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 415px) {
   .specials .specials-list {
     -ms-grid-columns: Repeat(auto-fit, minmax(280px, 1fr));
         grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
     padding: 30px 20px;
   }
   .specials .specials-list div {
-    padding: 20px 10px;
+    padding: 10px 10px;
+  }
+  .specials .specials-list div h3 {
+    font-size: 1.6rem;
   }
   .specials .specials-list div p {
     font-size: 1.4rem;
-    padding: 20px 5px 10px 5px;
+    padding: 10px 5px 10px 5px;
   }
 }
 
