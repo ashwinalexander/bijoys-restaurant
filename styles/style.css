@@ -1033,14 +1033,12 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .section-subscribe {
   background-color: rgba(189, 213, 234, 0.4);
-  border: 2px solid red;
 }
 
 .section-subscribe .form-subscribe {
   padding: 30px 0px;
   margin: 0px 110px;
   text-transform: lowercase;
-  border: 2px solid green;
 }
 
 .section-subscribe .form-subscribe h2 {
