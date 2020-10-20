@@ -462,7 +462,7 @@ li {
   /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #f08773;
+  background-color: #0960b0;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -514,7 +514,7 @@ li {
 
 header {
   padding: 0px 0px;
-  background-color: #f08773;
+  background-color: #0960b0;
 }
 
 header .masthead-social {
