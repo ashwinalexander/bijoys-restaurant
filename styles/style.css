@@ -462,7 +462,7 @@ li {
   /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #04395e;
+  background-color: #f08773;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -514,7 +514,7 @@ li {
 
 header {
   padding: 0px 0px;
-  background-color: #04395e;
+  background-color: #f08773;
 }
 
 header .masthead-social {
@@ -575,7 +575,7 @@ header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i
 }
 
 .covid-update {
-  background-color: #eff0f1;
+  background-color: rgba(189, 213, 234, 0.4);
   padding: 5px 15px;
   border: 5px solid #fffbfa;
   border-radius: 5px;
@@ -921,7 +921,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .specials .specials-list div {
   padding: 20px;
-  background-color: #eff0f1;
+  background-color: rgba(189, 213, 234, 0.4);
   color: #191919;
   border: #1da1f2 1px solid;
   border-radius: 5px;
@@ -1024,7 +1024,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .section-subscribe {
-  background-color: #eff0f1;
+  background-color: rgba(189, 213, 234, 0.4);
 }
 
 .section-subscribe .form-subscribe {
@@ -1139,7 +1139,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .menus_section {
-  background-color: #eff0f1;
+  background-color: rgba(189, 213, 234, 0.4);
 }
 
 .menus_section .bijoys-menu {
