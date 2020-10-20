@@ -462,7 +462,7 @@ li {
   /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #1da1f2;
+  background-color: #04395e;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -475,7 +475,7 @@ li {
   top: 10%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .overlay .overlay-content .img-container {
@@ -599,7 +599,6 @@ nav .mobile-menus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #eff0f1;
 }
 
 nav .mobile-menus div .mailing-button {

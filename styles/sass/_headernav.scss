@@ -7,7 +7,7 @@
   left: 0;
   top: 0;
 
-  background-color: $primary-color;
+  background-color: $header-color;
 
   overflow-x: hidden;
   transition: 0.5s;
@@ -18,7 +18,7 @@
     top: 10%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 10px;
 
     .img-container {
       padding: 40px;
@@ -144,7 +144,7 @@ nav {
     padding: 10px 0px;
 
     justify-content: space-evenly;
-    background-color: $secondary-color;
+    //background-color: $secondary-color;
     div {
       .mailing-button {
         background-color: $light-color;
