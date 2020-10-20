@@ -19,6 +19,10 @@
     width: 100%;
     text-align: center;
     margin-top: 30px;
+
+    .img-container {
+      padding: 40px;
+    }
     a {
       padding: 8px;
       text-decoration: none;
@@ -51,8 +55,8 @@
 }
 
 header {
-  padding: 0px 0px 0px 0px;
-  background-color: $primary-color;
+  padding: 0px 0px;
+  background-color: $header-color;
 
   .masthead-social {
     display: flex;
@@ -202,7 +206,7 @@ nav {
         &:active {
           cursor: pointer;
           a {
-            color: $quarternary-color;
+            color: $primary-color;
           }
         }
 

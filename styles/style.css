@@ -421,16 +421,16 @@ p {
 button {
   font-size: 2.5rem;
   text-align: center;
-  color: #22bcbf;
+  color: #1da1f2;
   text-transform: uppercase;
   padding: 10px 20px;
   border: 4px solid transparent;
-  background-color: #22bcbf;
+  background-color: #1da1f2;
 }
 
 button:hover {
   border: 4px solid #eeff03;
-  color: #22bcbf;
+  color: #1da1f2;
 }
 
 a,
@@ -462,7 +462,7 @@ li {
   /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #22bcbf;
+  background-color: #1da1f2;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -476,6 +476,10 @@ li {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+}
+
+.overlay .overlay-content .img-container {
+  padding: 40px;
 }
 
 .overlay .overlay-content a {
@@ -509,8 +513,8 @@ li {
 }
 
 header {
-  padding: 0px 0px 0px 0px;
-  background-color: #22bcbf;
+  padding: 0px 0px;
+  background-color: #04395e;
 }
 
 header .masthead-social {
@@ -600,7 +604,7 @@ nav .mobile-menus {
 
 nav .mobile-menus div .mailing-button {
   background-color: #fffbfa;
-  border: 3px solid #22bcbf;
+  border: 3px solid #1da1f2;
   border-radius: 5px;
   width: 100%;
   text-align: center;
@@ -608,7 +612,7 @@ nav .mobile-menus div .mailing-button {
 
 nav .mobile-menus div .mailing-button a {
   text-transform: lowercase;
-  color: #22bcbf;
+  color: #1da1f2;
   padding: 11px 20px;
   font-size: 1.8rem;
 }
@@ -618,8 +622,8 @@ nav .mobile-menus div .mailing-button:hover, nav .mobile-menus div .mailing-butt
 }
 
 nav .mobile-menus div .order-button {
-  background-color: #22bcbf;
-  border: 3px solid #22bcbf;
+  background-color: #1da1f2;
+  border: 3px solid #1da1f2;
   border-radius: 5px;
   width: 100%;
   text-align: center;
@@ -655,7 +659,7 @@ nav .menus ul li:hover, nav .menus ul li:focus, nav .menus ul li:active {
 }
 
 nav .menus ul li:hover a, nav .menus ul li:focus a, nav .menus ul li:active a {
-  color: #d5001c;
+  color: #1da1f2;
 }
 
 nav .menus ul li a {
@@ -666,8 +670,8 @@ nav .menus ul li a {
 }
 
 nav .menus ul .order-button {
-  background-color: #22bcbf;
-  border: 3px solid #22bcbf;
+  background-color: #1da1f2;
+  border: 3px solid #1da1f2;
   margin-left: auto;
 }
 
@@ -814,7 +818,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   position: absolute;
   top: 65%;
   border-radius: 5px;
-  border: 3px solid #22bcbf;
+  border: 3px solid #1da1f2;
 }
 
 .bijoys-hero .btn a {
@@ -823,8 +827,8 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .bijoys-hero .btnReserve {
   right: 25%;
-  border: 3px solid #22bcbf;
-  background-color: #22bcbf;
+  border: 3px solid #1da1f2;
+  background-color: #1da1f2;
 }
 
 .bijoys-hero .btnReserve a {
@@ -832,7 +836,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .bijoys-hero .btnReserve:hover {
-  background-color: #22bcbf;
+  background-color: #1da1f2;
 }
 
 .bijoys-hero .btnReserve:hover a {
@@ -845,7 +849,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .bijoys-hero .btnNewsletter a {
-  color: #22bcbf;
+  color: #1da1f2;
 }
 
 .bijoys-hero .btnNewsletter:hover {
@@ -920,7 +924,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   padding: 20px;
   background-color: #eff0f1;
   color: #191919;
-  border: #22bcbf 1px solid;
+  border: #1da1f2 1px solid;
   border-radius: 5px;
 }
 
@@ -1072,7 +1076,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .section-subscribe .form-subscribe .form-flex .label-flex .txtForm {
   font-size: 1.8rem;
   padding: 10px 10px;
-  border: 1px #22bcbf solid;
+  border: 1px #1da1f2 solid;
   background-color: #fffbfa;
   border-radius: 5px;
 }
@@ -1084,9 +1088,9 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .section-subscribe .form-subscribe .clear button {
   font-size: 1.8rem;
   padding: 10px 40px;
-  border: 3px solid #22bcbf;
+  border: 3px solid #1da1f2;
   border-radius: 5px;
-  background-color: #22bcbf;
+  background-color: #1da1f2;
   font-weight: bolder;
   color: #fffbfa;
   text-transform: lowercase;
@@ -1177,10 +1181,10 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .menus_section .bijoys-menu .download-menus ul li {
-  background-color: #22bcbf;
+  background-color: #1da1f2;
   margin-bottom: 10px;
   text-align: center;
-  border: 2px solid #22bcbf;
+  border: 2px solid #1da1f2;
   cursor: pointer;
 }
 
