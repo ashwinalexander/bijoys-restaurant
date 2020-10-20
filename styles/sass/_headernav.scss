@@ -20,7 +20,7 @@
     margin-top: 10px;
 
     .img-container {
-      padding: 0px 40px 20px 40px;
+      padding: 0px 120px 40px 120px;
     }
     a {
       padding: 8px;
@@ -62,7 +62,6 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     padding: 5px 10px 10px 30px;
 
     .masthead {
@@ -143,11 +142,11 @@ nav {
     padding: 10px 0px;
 
     justify-content: space-evenly;
-    //background-color: $secondary-color;
+
     div {
       .mailing-button {
         background-color: $light-color;
-        border: 3px solid $primary-color;
+        border: 1px solid $primary-color;
         border-radius: 5px;
         width: 100%;
         text-align: center;
