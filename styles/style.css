@@ -479,7 +479,7 @@ li {
 }
 
 .overlay .overlay-content .img-container {
-  padding: 40px;
+  padding: 0px 40px 40px 40px;
 }
 
 .overlay .overlay-content a {
