@@ -8,14 +8,13 @@
   top: 0;
 
   background-color: $header-color;
-
   overflow-x: hidden;
   transition: 0.5s;
   /* Position the content inside the overlay */
 
   .overlay-content {
     position: relative;
-    top: 5%;
+    top: 15%;
     width: 100%;
     text-align: center;
     margin-top: 10px;
