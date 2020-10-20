@@ -31,8 +31,9 @@
         .txtForm {
           font-size: 1.8rem;
           padding: 10px 10px;
-          border: 3px $accent-color solid;
+          border: 1px $primary-color solid;
           background-color: $light-color;
+          border-radius: 5px;
         }
       }
     }
@@ -41,10 +42,11 @@
       button {
         font-size: 1.8rem;
         padding: 10px 40px;
-        border: 3px solid $accent-color;
-        background-color: $accent-color;
+        border: 3px solid $primary-color;
+        border-radius: 5px;
+        background-color: $primary-color;
         font-weight: bolder;
-        color: $dark-color;
+        color: $light-color;
 
         text-transform: lowercase;
 
@@ -52,7 +54,6 @@
         :active,
         :focus {
           color: $accent-color;
-          background-color: $dark-color;
         }
       }
     }

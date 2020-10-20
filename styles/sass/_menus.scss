@@ -25,14 +25,13 @@
         width: 50%;
 
         li {
-          background-color: $accent-color;
+          background-color: $primary-color;
           margin-bottom: 10px;
           text-align: center;
-          border: 2px solid $accent-color;
+          border: 2px solid $primary-color;
           cursor: pointer;
 
           &:hover {
-            background-color: $dark-color;
             a {
               color: $accent-color;
             }
@@ -41,7 +40,7 @@
           a {
             padding: 10px 30px;
             font-size: 1.7rem;
-            color: $dark-color;
+            color: $light-color;
           }
         }
       }

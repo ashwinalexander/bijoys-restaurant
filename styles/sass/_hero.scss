@@ -2,7 +2,6 @@
   position: relative;
 
   a {
-    color: $light-color;
     font-size: 2.5rem;
     padding: 11px 20px;
   }
@@ -10,34 +9,42 @@
   .btn {
     position: absolute;
     top: 65%;
-
-    border: 3px solid $accent-color;
-    color: $light-color;
-    background-color: $accent-color;
     border-radius: 5px;
+    border: 3px solid $primary-color;
 
     a {
       text-transform: lowercase;
-      color: $dark-color;
     }
+  }
 
+  .btnReserve {
+    right: 25%;
+    border: 3px solid $primary-color;
+    background-color: $primary-color;
+
+    a {
+      color: $light-color;
+    }
     &:hover {
-      background-color: $dark-color;
+      background-color: $primary-color;
       a {
         color: $accent-color;
       }
     }
   }
 
-  .btnReserve {
-    right: 25%;
-  }
-
   .btnNewsletter {
     left: 25%;
+    background-color: $light-color;
+    a {
+      color: $primary-color;
+    }
+    &:hover {
+      background-color: $accent-color;
+    }
   }
 
-  .overlay {
+  .hero-overlay {
     position: absolute;
     bottom: 0;
 

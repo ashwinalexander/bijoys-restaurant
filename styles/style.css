@@ -421,16 +421,16 @@ p {
 button {
   font-size: 2.5rem;
   text-align: center;
-  color: #fe5f55;
+  color: #2a4b6d;
   text-transform: uppercase;
   padding: 10px 20px;
   border: 4px solid transparent;
-  background-color: #fe5f55;
+  background-color: #2a4b6d;
 }
 
 button:hover {
   border: 4px solid #eeff03;
-  color: #fe5f55;
+  color: #2a4b6d;
 }
 
 a,
@@ -462,7 +462,7 @@ li {
   /* Sit on top */
   left: 0;
   top: 0;
-  background-color: #0b4f6c;
+  background-color: #2a4b6d;
   overflow-x: hidden;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -482,7 +482,7 @@ li {
   padding: 8px;
   text-decoration: none;
   font-size: 2rem;
-  color: #f7f7ff;
+  color: #fffbfa;
   display: block;
   /* Display block instead of inline */
   -webkit-transition: 0.3s;
@@ -501,7 +501,7 @@ li {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
   font-size: 4rem;
-  color: #f7f7ff;
+  color: #fffbfa;
 }
 
 .overlay .closebtn:hover, .overlay .closebtn:focus, .overlay .closebtn:active {
@@ -510,7 +510,7 @@ li {
 
 header {
   padding: 0px 0px 0px 0px;
-  background-color: #fe5f55;
+  background-color: #2a4b6d;
 }
 
 header .masthead-social {
@@ -536,7 +536,7 @@ header .masthead-social .masthead h1 {
 
 header .masthead-social .masthead a,
 header .masthead-social .masthead p {
-  color: #f7f7ff;
+  color: #fffbfa;
 }
 
 header .masthead-social .masthead p a {
@@ -549,7 +549,7 @@ header .masthead-social .social ul li {
 }
 
 header .masthead-social .social ul li i {
-  color: #f7f7ff;
+  color: #fffbfa;
 }
 
 header .masthead-social .social ul li i:hover, header .masthead-social .social ul li i:focus, header .masthead-social .social ul li i:active {
@@ -562,7 +562,7 @@ header .masthead-social .hamburger {
 }
 
 header .masthead-social .hamburger i {
-  color: #f7f7ff;
+  color: #fffbfa;
   font-size: 3.2rem;
 }
 
@@ -571,10 +571,10 @@ header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i
 }
 
 .covid-update {
-  background-color: #eeff03;
+  background-color: #eff0f1;
   padding: 5px 15px;
-  border: 5px solid #f7f7ff;
-  border-radius: 7px;
+  border: 5px solid #fffbfa;
+  border-radius: 5px;
 }
 
 .covid-update p {
@@ -595,49 +595,41 @@ nav .mobile-menus {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: rgba(189, 213, 234, 0.4);
+  background-color: #eff0f1;
 }
 
 nav .mobile-menus div .mailing-button {
-  background-color: #f7f7ff;
-  border: 3px solid #eeff03;
+  background-color: #fffbfa;
+  border: 3px solid #2a4b6d;
+  border-radius: 5px;
   width: 100%;
   text-align: center;
 }
 
 nav .mobile-menus div .mailing-button a {
   text-transform: lowercase;
-  color: #191919;
+  color: #2a4b6d;
   padding: 11px 20px;
   font-size: 1.8rem;
 }
 
 nav .mobile-menus div .mailing-button:hover, nav .mobile-menus div .mailing-button:focus, nav .mobile-menus div .mailing-button:active {
-  border: 3px solid #eeff03;
   background-color: #eeff03;
-}
-
-nav .mobile-menus div .mailing-button:hover a, nav .mobile-menus div .mailing-button:focus a, nav .mobile-menus div .mailing-button:active a {
-  color: #191919;
 }
 
 nav .mobile-menus div .order-button {
-  background-color: #eeff03;
-  border: 3px solid #eeff03;
+  background-color: #2a4b6d;
+  border: 3px solid #2a4b6d;
+  border-radius: 5px;
   width: 100%;
   text-align: center;
 }
 
 nav .mobile-menus div .order-button a {
   text-transform: lowercase;
-  color: #191919;
+  color: #fffbfa;
   padding: 11px 20px;
   font-size: 1.8rem;
-}
-
-nav .mobile-menus div .order-button:hover, nav .mobile-menus div .order-button:focus, nav .mobile-menus div .order-button:active {
-  border: 3px solid #eeff03;
-  background-color: #191919;
 }
 
 nav .mobile-menus div .order-button:hover a, nav .mobile-menus div .order-button:focus a, nav .mobile-menus div .order-button:active a {
@@ -659,12 +651,11 @@ nav .menus ul {
 }
 
 nav .menus ul li:hover, nav .menus ul li:focus, nav .menus ul li:active {
-  background-color: #eeff03;
   cursor: pointer;
 }
 
 nav .menus ul li:hover a, nav .menus ul li:focus a, nav .menus ul li:active a {
-  color: #191919;
+  color: #d5001c;
 }
 
 nav .menus ul li a {
@@ -675,18 +666,13 @@ nav .menus ul li a {
 }
 
 nav .menus ul .order-button {
-  background-color: #eeff03;
-  border: 3px solid #eeff03;
+  background-color: #2a4b6d;
+  border: 3px solid #2a4b6d;
   margin-left: auto;
 }
 
 nav .menus ul .order-button a {
-  color: #191919;
-}
-
-nav .menus ul .order-button:hover, nav .menus ul .order-button:focus, nav .menus ul .order-button:active {
-  border: 3px solid #eeff03;
-  background-color: #191919;
+  color: #fffbfa;
 }
 
 nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .menus ul .order-button:active a {
@@ -718,12 +704,8 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   header .masthead-social .social {
     display: none;
   }
-  .covid-update {
-    background-color: #0b4f6c;
-  }
   .covid-update p {
     font-size: 1.2rem;
-    color: #f7f7ff;
   }
 }
 
@@ -824,7 +806,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .bijoys-hero a {
-  color: #f7f7ff;
   font-size: 2.5rem;
   padding: 11px 20px;
 }
@@ -832,34 +813,46 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .bijoys-hero .btn {
   position: absolute;
   top: 65%;
-  border: 3px solid #eeff03;
-  color: #f7f7ff;
-  background-color: #eeff03;
   border-radius: 5px;
+  border: 3px solid #2a4b6d;
 }
 
 .bijoys-hero .btn a {
   text-transform: lowercase;
-  color: #191919;
-}
-
-.bijoys-hero .btn:hover {
-  background-color: #191919;
-}
-
-.bijoys-hero .btn:hover a {
-  color: #eeff03;
 }
 
 .bijoys-hero .btnReserve {
   right: 25%;
+  border: 3px solid #2a4b6d;
+  background-color: #2a4b6d;
+}
+
+.bijoys-hero .btnReserve a {
+  color: #fffbfa;
+}
+
+.bijoys-hero .btnReserve:hover {
+  background-color: #2a4b6d;
+}
+
+.bijoys-hero .btnReserve:hover a {
+  color: #eeff03;
 }
 
 .bijoys-hero .btnNewsletter {
   left: 25%;
+  background-color: #fffbfa;
 }
 
-.bijoys-hero .overlay {
+.bijoys-hero .btnNewsletter a {
+  color: #2a4b6d;
+}
+
+.bijoys-hero .btnNewsletter:hover {
+  background-color: #eeff03;
+}
+
+.bijoys-hero .hero-overlay {
   position: absolute;
   bottom: 0;
   background: rgba(0, 0, 0, 0.25);
@@ -925,9 +918,9 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 
 .specials .specials-list div {
   padding: 20px;
-  background-color: rgba(189, 213, 234, 0.4);
+  background-color: #eff0f1;
   color: #191919;
-  border: #eeff03 3px solid;
+  border: #2a4b6d 1px solid;
   border-radius: 5px;
 }
 
@@ -997,10 +990,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   text-transform: lowercase;
 }
 
-.story .story-note p {
-  text-transform: lowercase;
-}
-
 .story .story-image {
   width: 34%;
 }
@@ -1032,7 +1021,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .section-subscribe {
-  background-color: rgba(189, 213, 234, 0.4);
+  background-color: #eff0f1;
 }
 
 .section-subscribe .form-subscribe {
@@ -1083,8 +1072,9 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .section-subscribe .form-subscribe .form-flex .label-flex .txtForm {
   font-size: 1.8rem;
   padding: 10px 10px;
-  border: 3px #eeff03 solid;
-  background-color: #f7f7ff;
+  border: 1px #2a4b6d solid;
+  background-color: #fffbfa;
+  border-radius: 5px;
 }
 
 .section-subscribe .form-subscribe .clear {
@@ -1094,10 +1084,11 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .section-subscribe .form-subscribe .clear button {
   font-size: 1.8rem;
   padding: 10px 40px;
-  border: 3px solid #eeff03;
-  background-color: #eeff03;
+  border: 3px solid #2a4b6d;
+  border-radius: 5px;
+  background-color: #2a4b6d;
   font-weight: bolder;
-  color: #191919;
+  color: #fffbfa;
   text-transform: lowercase;
 }
 
@@ -1105,7 +1096,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .section-subscribe .form-subscribe .clear button :active,
 .section-subscribe .form-subscribe .clear button :focus {
   color: #eeff03;
-  background-color: #191919;
 }
 
 @media screen and (max-width: 1090px) {
@@ -1146,7 +1136,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .menus_section {
-  background-color: rgba(189, 213, 234, 0.4);
+  background-color: #eff0f1;
 }
 
 .menus_section .bijoys-menu {
@@ -1187,15 +1177,11 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .menus_section .bijoys-menu .download-menus ul li {
-  background-color: #eeff03;
+  background-color: #2a4b6d;
   margin-bottom: 10px;
   text-align: center;
-  border: 2px solid #eeff03;
+  border: 2px solid #2a4b6d;
   cursor: pointer;
-}
-
-.menus_section .bijoys-menu .download-menus ul li:hover {
-  background-color: #191919;
 }
 
 .menus_section .bijoys-menu .download-menus ul li:hover a {
@@ -1205,7 +1191,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .menus_section .bijoys-menu .download-menus ul li a {
   padding: 10px 30px;
   font-size: 1.7rem;
-  color: #191919;
+  color: #fffbfa;
 }
 
 @media screen and (max-width: 1060px) {
@@ -1284,7 +1270,7 @@ footer .contact-footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  color: #f7f7ff;
+  color: #fffbfa;
   padding: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1305,7 +1291,7 @@ footer .contact-footer .contact-social h3 {
   text-transform: lowercase;
   font-weight: bolder;
   padding-bottom: 25px;
-  color: #eeff03;
+  color: #fffbfa;
 }
 
 footer .contact-footer .contact-address p,
@@ -1319,7 +1305,7 @@ footer .contact-footer .contact-social a,
 footer .contact-footer .contact-social a:visited {
   font-size: 1.6rem;
   text-align: center;
-  color: #f7f7ff;
+  color: #fffbfa;
   font-weight: bolder;
 }
 
@@ -1360,7 +1346,7 @@ footer .back-to-top {
 
 footer .back-to-top a {
   font-size: 1.4rem;
-  color: #f7f7ff;
+  color: #fffbfa;
   padding: 10px;
 }
 

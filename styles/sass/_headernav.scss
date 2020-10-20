@@ -7,7 +7,7 @@
   left: 0;
   top: 0;
 
-  background-color: $tertiary-color;
+  background-color: $primary-color;
 
   overflow-x: hidden;
   transition: 0.5s;
@@ -111,10 +111,10 @@ header {
 }
 
 .covid-update {
-  background-color: $accent-color;
+  background-color: $secondary-color;
   padding: 5px 15px;
   border: 5px solid $light-color;
-  border-radius: 7px;
+  border-radius: 5px;
 
   p {
     color: $dark-color;
@@ -144,13 +144,14 @@ nav {
     div {
       .mailing-button {
         background-color: $light-color;
-        border: 3px solid $accent-color;
+        border: 3px solid $primary-color;
+        border-radius: 5px;
         width: 100%;
         text-align: center;
 
         a {
           text-transform: lowercase;
-          color: $dark-color;
+          color: $primary-color;
           padding: 11px 20px;
           font-size: 1.8rem;
         }
@@ -158,24 +159,21 @@ nav {
         &:hover,
         &:focus,
         &:active {
-          border: 3px solid $accent-color;
           background-color: $accent-color;
-          a {
-            color: $dark-color;
-          }
         }
       }
 
       .order-button {
-        background-color: $accent-color;
-        border: 3px solid $accent-color;
+        background-color: $primary-color;
+        border: 3px solid $primary-color;
+        border-radius: 5px;
 
         width: 100%;
         text-align: center;
 
         a {
           text-transform: lowercase;
-          color: $dark-color;
+          color: $light-color;
           padding: 11px 20px;
           font-size: 1.8rem;
         }
@@ -183,8 +181,6 @@ nav {
         &:hover,
         &:focus,
         &:active {
-          border: 3px solid $accent-color;
-          background-color: $dark-color;
           a {
             color: $accent-color;
           }
@@ -204,10 +200,9 @@ nav {
         &:hover,
         &:focus,
         &:active {
-          background-color: $accent-color;
           cursor: pointer;
           a {
-            color: $dark-color;
+            color: $quarternary-color;
           }
         }
 
@@ -220,18 +215,16 @@ nav {
       }
 
       .order-button {
-        background-color: $accent-color;
-        border: 3px solid $accent-color;
+        background-color: $primary-color;
+        border: 3px solid $primary-color;
         margin-left: auto;
         a {
-          color: $dark-color;
+          color: $light-color;
         }
 
         &:hover,
         &:focus,
         &:active {
-          border: 3px solid $accent-color;
-          background-color: $dark-color;
           a {
             color: $accent-color;
           }
@@ -291,9 +284,7 @@ nav {
   .covid-update {
     p {
       font-size: 1.2rem;
-      color: $light-color;
     }
-    background-color: $tertiary-color;
   }
 }
 
