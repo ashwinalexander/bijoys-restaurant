@@ -1,428 +1,439 @@
 /* The Overlay (background for smaller screens) */
 .overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
+	height: 0%;
+	width: 100%;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
 
-  background-color: $header-color;
-  overflow-x: hidden;
-  transition: 0.5s;
-  /* Position the content inside the overlay */
+	background-color: $header-color;
+	overflow-x: hidden;
+	transition: 0.5s;
+	/* Position the content inside the overlay */
 
-  .overlay-content {
-    position: relative;
-    top: 15%;
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
+	.overlay-content {
+		position: relative;
+		top: 15%;
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
 
-    .img-container {
-      padding: 0px 50px 40px 50px;
-    }
-    a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 2rem;
-      color: $light-color;
-      display: block; /* Display block instead of inline */
-      transition: 0.3s; /* Transition effects on hover (color) */
+		.img-container {
+			padding: 0px 50px 40px 50px;
+		}
+		a {
+			padding: 8px;
+			text-decoration: none;
+			font-size: 2rem;
+			color: $light-color;
+			display: block; /* Display block instead of inline */
+			transition: 0.3s; /* Transition effects on hover (color) */
 
-      &:hover,
-      &:focus,
-      &:active {
-        color: $accent-color;
-      }
-    }
-  }
-  /* Position the close button (top right corner) */
-  .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    text-decoration-line: none;
-    font-size: 4rem;
-    color: $light-color;
-    &:hover,
-    &:focus,
-    &:active {
-      color: $accent-color;
-    }
-  }
+			&:hover,
+			&:focus,
+			&:active {
+				color: $accent-color;
+			}
+		}
+	}
+	/* Position the close button (top right corner) */
+	.closebtn {
+		position: absolute;
+		top: 20px;
+		right: 45px;
+		text-decoration-line: none;
+		font-size: 4rem;
+		color: $light-color;
+		&:hover,
+		&:focus,
+		&:active {
+			color: $accent-color;
+		}
+	}
 }
 
 header {
-  padding: 0px 0px;
-  background-color: $header-color;
+	padding: 0px 0px;
+	background-color: $header-color;
 
-  .masthead-social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px 10px 30px;
+	.masthead-social {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px 10px 10px 30px;
 
-    .masthead {
-      h1 {
-        text-align: left;
-      }
-      a,
-      p {
-        color: $light-color;
-      }
+		.masthead {
+			h1 {
+				text-align: left;
+			}
+			a,
+			p {
+				color: $light-color;
+			}
 
-      p a {
-        padding-top: 3px;
-        font-size: 1.4rem;
-      }
-    }
+			p a {
+				padding-top: 3px;
+				font-size: 1.4rem;
+			}
+		}
 
-    .social {
-      ul li {
-        padding: 5px 12px;
-        i {
-          color: $light-color;
+		.social {
+			ul li {
+				padding: 5px 12px;
+				i {
+					color: $light-color;
 
-          &:hover,
-          &:focus,
-          &:active {
-            color: $accent-color;
-          }
-        }
-      }
-    }
+					&:hover,
+					&:focus,
+					&:active {
+						color: $accent-color;
+					}
+				}
+			}
+		}
 
-    .hamburger {
-      display: none;
-      padding: 10px 20px;
+		.hamburger {
+			display: none;
+			padding: 10px 20px;
 
-      i {
-        color: $light-color;
-        font-size: 3.2rem;
+			i {
+				color: $light-color;
+				font-size: 3.2rem;
 
-        &:hover,
-        &:focus,
-        &:active {
-          color: $accent-color;
-        }
-      }
-    }
-  }
+				&:hover,
+				&:focus,
+				&:active {
+					color: $accent-color;
+				}
+			}
+		}
+	}
+}
+
+.thanks-update {
+	margin-top: 15px;
+	background-color: lightgreen;
+	padding: 15px;
+	text-align: center;
+	p {
+		font-size: bold;
+		color: $dark-color;
+	}
 }
 
 .covid-update {
-  background-color: $secondary-color;
-  padding: 5px 15px;
-  border: 5px solid $light-color;
-  border-radius: 5px;
+	background-color: $secondary-color;
+	padding: 5px 15px;
+	border: 5px solid $light-color;
+	border-radius: 5px;
 
-  p {
-    color: $dark-color;
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    line-height: 2.2rem;
-  }
+	p {
+		color: $dark-color;
+		text-align: center;
+		font-size: 1.4rem;
+		font-weight: bolder;
+		line-height: 2.2rem;
+	}
 }
 
 nav {
-  //uncomment for fixed nav bar
-  // background-color: $light-color;
-  // position: sticky;
-  // z-index: 1;
-  // top: 0px;
-  // width: 100%;
-  //fixed nav
+	//uncomment for fixed nav bar
+	// background-color: $light-color;
+	// position: sticky;
+	// z-index: 1;
+	// top: 0px;
+	// width: 100%;
+	//fixed nav
 
-  .mobile-menus {
-    display: none;
-    flex-direction: row;
-    padding: 10px 0px;
+	.mobile-menus {
+		display: none;
+		flex-direction: row;
+		padding: 10px 0px;
 
-    justify-content: space-evenly;
+		justify-content: space-evenly;
 
-    div {
-      .mailing-button {
-        background-color: $light-color;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
-        width: 100%;
-        text-align: center;
+		div {
+			.mailing-button {
+				background-color: $light-color;
+				border: 1px solid $primary-color;
+				border-radius: 5px;
+				width: 100%;
+				text-align: center;
 
-        a {
-          text-transform: lowercase;
-          color: $primary-color;
-          padding: 11px 20px;
-          font-size: 1.8rem;
-        }
+				a {
+					text-transform: lowercase;
+					color: $primary-color;
+					padding: 11px 20px;
+					font-size: 1.8rem;
+				}
 
-        &:hover,
-        &:focus,
-        &:active {
-          background-color: $accent-color;
-        }
-      }
+				&:hover,
+				&:focus,
+				&:active {
+					background-color: $accent-color;
+				}
+			}
 
-      .order-button {
-        background-color: $primary-color;
-        border: 1px solid $primary-color;
-        border-radius: 5px;
+			.order-button {
+				background-color: $primary-color;
+				border: 1px solid $primary-color;
+				border-radius: 5px;
 
-        width: 100%;
-        text-align: center;
+				width: 100%;
+				text-align: center;
 
-        a {
-          text-transform: lowercase;
-          color: $light-color;
-          padding: 11px 20px;
-          font-size: 1.8rem;
-        }
+				a {
+					text-transform: lowercase;
+					color: $light-color;
+					padding: 11px 20px;
+					font-size: 1.8rem;
+				}
 
-        &:hover,
-        &:focus,
-        &:active {
-          a {
-            color: $accent-color;
-          }
-        }
-      }
-    }
-  }
+				&:hover,
+				&:focus,
+				&:active {
+					a {
+						color: $accent-color;
+					}
+				}
+			}
+		}
+	}
 
-  .menus {
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      padding: 12px 0px;
+	.menus {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			padding: 12px 0px;
 
-      li {
-        &:hover,
-        &:focus,
-        &:active {
-          cursor: pointer;
-          a {
-            color: $primary-color;
-          }
-        }
+			li {
+				&:hover,
+				&:focus,
+				&:active {
+					cursor: pointer;
+					a {
+						color: $primary-color;
+					}
+				}
 
-        a {
-          text-transform: lowercase;
-          color: $dark-color;
-          padding: 11px 20px;
-          font-size: 1.8rem;
-        }
-      }
+				a {
+					text-transform: lowercase;
+					color: $dark-color;
+					padding: 11px 20px;
+					font-size: 1.8rem;
+				}
+			}
 
-      .order-button {
-        background-color: $primary-color;
-        border: 3px solid $primary-color;
-        margin-left: auto;
-        a {
-          color: $light-color;
-        }
+			.order-button {
+				background-color: $primary-color;
+				border: 3px solid $primary-color;
+				margin-left: auto;
+				a {
+					color: $light-color;
+				}
 
-        &:hover,
-        &:focus,
-        &:active {
-          a {
-            color: $accent-color;
-          }
-        }
-      }
+				&:hover,
+				&:focus,
+				&:active {
+					a {
+						color: $accent-color;
+					}
+				}
+			}
 
-      //end
-    }
-  }
+			//end
+		}
+	}
 }
 
 @media screen and (max-width: 1100px) {
-  nav {
-    .menus {
-      ul li a {
-        padding: 11px 10px;
-      }
-    }
-  }
+	nav {
+		.menus {
+			ul li a {
+				padding: 11px 10px;
+			}
+		}
+	}
 
-  .covid-update {
-    p {
-      font-size: 1.2rem;
-    }
-  }
+	.covid-update {
+		p {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 @media screen and (max-width: 950px) {
-  nav {
-    .menus {
-      ul li a {
-        padding: 11px 5px 11px 10px;
-      }
-    }
-  }
+	nav {
+		.menus {
+			ul li a {
+				padding: 11px 5px 11px 10px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 900px) {
-  nav {
-    .menus {
-      display: none;
-    }
-  }
+	nav {
+		.menus {
+			display: none;
+		}
+	}
 
-  header {
-    .masthead-social {
-      .hamburger {
-        display: block;
-      }
+	header {
+		.masthead-social {
+			.hamburger {
+				display: block;
+			}
 
-      .social {
-        display: none;
-      }
-    }
-  }
+			.social {
+				display: none;
+			}
+		}
+	}
 
-  .covid-update {
-    p {
-      font-size: 1.2rem;
-    }
-  }
+	.covid-update {
+		p {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 @media screen and (max-width: 750px) {
-  .social {
-    .icon {
-      float: left;
-      display: block;
-    }
-  }
-  nav {
-    .mobile-menus {
-      display: flex;
-    }
-  }
+	.social {
+		.icon {
+			float: left;
+			display: block;
+		}
+	}
+	nav {
+		.mobile-menus {
+			display: flex;
+		}
+	}
 }
 
 @media screen and (max-width: 700px) {
-  header {
-    .masthead-social {
-      .masthead {
-        h1 a {
-          font-size: 3rem;
-        }
+	header {
+		.masthead-social {
+			.masthead {
+				h1 a {
+					font-size: 3rem;
+				}
 
-        p a {
-          font-size: 1.3rem;
-        }
-      }
-    }
-  }
-  .covid-update {
-    p {
-      font-size: 1.2rem;
-    }
-  }
+				p a {
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+	.covid-update {
+		p {
+			font-size: 1.2rem;
+		}
+	}
 }
 
 @media screen and (max-width: 500px) {
-  header {
-    .masthead-social {
-      .masthead {
-        h1 a {
-          font-size: 2.5rem;
-        }
+	header {
+		.masthead-social {
+			.masthead {
+				h1 a {
+					font-size: 2.5rem;
+				}
 
-        p a {
-          font-size: 1.2rem;
-        }
-      }
-    }
-  }
+				p a {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
 
-  nav {
-    .mobile-menus {
-      padding: 16px 0px;
-      div .mailing-button a,
-      div .order-button a {
-        font-size: 1.6rem;
-        padding: 11px 10px;
-      }
-    }
-  }
+	nav {
+		.mobile-menus {
+			padding: 16px 0px;
+			div .mailing-button a,
+			div .order-button a {
+				font-size: 1.6rem;
+				padding: 11px 10px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 470px) {
-  header {
-    .masthead-social {
-      .masthead {
-        h1 a {
-          font-size: 2.5rem;
-        }
+	header {
+		.masthead-social {
+			.masthead {
+				h1 a {
+					font-size: 2.5rem;
+				}
 
-        p {
-          font-size: 1.5rem;
-        }
-      }
-    }
-  }
+				p {
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 410px) {
-  header {
-    .masthead-social {
-      padding-left: 15px;
-      padding-bottom: 0px;
-      .masthead {
-        h1 {
-          padding-bottom: 20px;
+	header {
+		.masthead-social {
+			padding-left: 15px;
+			padding-bottom: 0px;
+			.masthead {
+				h1 {
+					padding-bottom: 20px;
 
-          a {
-            padding-top: 0px;
-            font-size: 2.3rem;
-          }
-        }
+					a {
+						padding-top: 0px;
+						font-size: 2.3rem;
+					}
+				}
 
-        p {
-          display: none;
-        }
-      }
+				p {
+					display: none;
+				}
+			}
 
-      .hamburger {
-        padding-right: 10px;
-      }
-    }
-  }
+			.hamburger {
+				padding-right: 10px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 360px) {
-  header {
-    .masthead-social {
-      .masthead {
-        align-items: center;
-        align-content: center;
+	header {
+		.masthead-social {
+			.masthead {
+				align-items: center;
+				align-content: center;
 
-        h1 {
-          a {
-            font-size: 2.1rem;
-            padding: 0px;
-          }
-        }
+				h1 {
+					a {
+						font-size: 2.1rem;
+						padding: 0px;
+					}
+				}
 
-        p {
-          display: none;
-        }
-      }
-    }
-  }
+				p {
+					display: none;
+				}
+			}
+		}
+	}
 
-  nav {
-    .mobile-menus {
-      div .mailing-button a,
-      div .order-button a {
-        font-size: 1.6rem;
-        padding: 11px 5px;
-      }
-    }
-  }
+	nav {
+		.mobile-menus {
+			div .mailing-button a,
+			div .order-button a {
+				font-size: 1.6rem;
+				padding: 11px 5px;
+			}
+		}
+	}
 }

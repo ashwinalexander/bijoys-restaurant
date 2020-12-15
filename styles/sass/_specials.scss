@@ -1,69 +1,69 @@
 .specials {
-  padding: 50px 0px;
+	padding: 50px 0px;
 
-  .specials-list {
-    padding: 50px 0px;
-    display: grid;
-    grid-template-columns: Repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 1rem;
+	.specials-list {
+		padding: 50px 0px;
+		display: grid;
+		grid-template-columns: Repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 1rem;
 
-    div {
-      padding: 20px;
-      background-color: $secondary-color;
-      color: $dark-color;
-      border: $primary-color 1px solid;
-      border-radius: 5px;
-      h3 {
-        font-weight: bolder;
-        text-transform: lowercase;
-      }
-      p {
-        padding: 20px 5px;
-        text-align: center;
+		div {
+			padding: 20px;
+			background-color: $secondary-color;
+			color: $dark-color;
+			border: $primary-color 1px solid;
+			border-radius: 5px;
+			h3 {
+				font-weight: bolder;
+				text-transform: lowercase;
+			}
+			p {
+				padding: 20px 5px;
+				text-align: center;
 
-        font-size: 1.6rem;
-      }
-    }
-  }
+				font-size: 1.6rem;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 1000px) {
-  .specials {
-    padding: 25px 0px;
+	.specials {
+		padding: 25px 0px;
 
-    .specials-list {
-      padding: 25px 30px;
-    }
-  }
+		.specials-list {
+			padding: 25px 30px;
+		}
+	}
 }
 
 @media screen and (max-width: 658px) {
-  .specials {
-    .specials-list {
-      div {
-        padding-bottom: 0px;
-      }
-    }
-  }
+	.specials {
+		.specials-list {
+			div {
+				padding-bottom: 0px;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 415px) {
-  .specials {
-    .specials-list {
-      grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
-      padding: 30px 20px;
+	.specials {
+		.specials-list {
+			grid-template-columns: Repeat(auto-fit, minmax(280px, 1fr));
+			padding: 30px 20px;
 
-      div {
-        padding: 10px 10px;
-        h3 {
-          font-size: 1.6rem;
-        }
+			div {
+				padding: 10px 10px;
+				h3 {
+					font-size: 1.6rem;
+				}
 
-        p {
-          font-size: 1.6rem;
-          padding: 10px 5px 10px 5px;
-        }
-      }
-    }
-  }
+				p {
+					font-size: 1.6rem;
+					padding: 10px 5px 10px 5px;
+				}
+			}
+		}
+	}
 }

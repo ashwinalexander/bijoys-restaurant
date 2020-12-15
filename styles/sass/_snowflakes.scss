@@ -1,24 +1,32 @@
-.story {
+.snowflakes {
 	padding: 50px 0px;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	background-color: $christmas-color;
 
-	.story-note {
+	.snowflakes-note {
 		width: 66%;
 		padding: 0px 40px;
 		h2 {
 			padding-bottom: 20px;
 			font-weight: 800;
 		}
+		p {
+			a {
+				font-family: $secondary-font;
+				font-size: 1.8rem;
+			}
+		}
 	}
 
-	.story-image {
+	.snowflakes-image {
 		width: 34%;
 	}
 }
 
 @media screen and (max-width: 1000px) {
-	.story-note {
+	.snowflakes-note {
 		p {
 			font-size: 1.6rem;
 		}
@@ -26,11 +34,11 @@
 }
 
 @media screen and (max-width: 800px) {
-	.story {
+	.snowflakes {
 		flex-direction: column;
 		padding: 25px 30px;
 
-		.story-note {
+		.snowflakes-note {
 			width: 100%;
 			padding: 20px 0px;
 			p {
@@ -38,7 +46,7 @@
 			}
 		}
 
-		.story-image {
+		.snowflakes-image {
 			width: 100%;
 		}
 	}

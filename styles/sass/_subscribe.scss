@@ -1,110 +1,110 @@
 .section-subscribe {
-  background-color: $secondary-color;
+	background-color: $secondary-color;
 
-  .form-subscribe {
-    padding: 30px 0px;
-    margin: 0px 110px;
-    text-transform: lowercase;
+	.form-subscribe {
+		padding: 30px 0px;
+		margin: 0px 110px;
+		// text-transform: lowercase;
 
-    h2 {
-      margin-bottom: 25px;
-    }
+		h2 {
+			margin-bottom: 25px;
+		}
 
-    .form-flex {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-end;
-      justify-content: space-between;
-      .label-flex {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 30px;
+		.form-flex {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-end;
+			justify-content: space-between;
+			.label-flex {
+				display: flex;
+				flex-direction: column;
+				padding: 0px 30px;
 
-        div {
-          padding: 4px 0px;
-        }
+				div {
+					padding: 4px 0px;
+				}
 
-        .lblForm {
-          font-size: 1.8rem;
-        }
+				.lblForm {
+					font-size: 1.8rem;
+				}
 
-        .txtForm {
-          font-size: 1.8rem;
-          padding: 10px 10px;
-          border: 1px $primary-color solid;
-          background-color: $light-color;
-          border-radius: 5px;
-        }
-      }
-    }
-    .clear {
-      padding: 5px;
-      button {
-        font-size: 1.8rem;
-        padding: 10px 40px;
-        border: 3px solid $primary-color;
-        border-radius: 5px;
-        background-color: $primary-color;
-        font-weight: bolder;
-        color: $light-color;
+				.txtForm {
+					font-size: 1.8rem;
+					padding: 10px 10px;
+					border: 1px $primary-color solid;
+					background-color: $light-color;
+					border-radius: 5px;
+				}
+			}
+		}
+		.clear {
+			padding: 5px;
+			button {
+				font-size: 1.8rem;
+				padding: 10px 40px;
+				border: 3px solid $primary-color;
+				border-radius: 5px;
+				background-color: $primary-color;
+				font-weight: bolder;
+				color: $light-color;
 
-        text-transform: lowercase;
+				text-transform: lowercase;
 
-        &:hover,
-        :active,
-        :focus {
-          color: $accent-color;
-        }
-      }
-    }
-  }
+				&:hover,
+				:active,
+				:focus {
+					color: $accent-color;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 1090px) {
-  .section-subscribe {
-    .form-subscribe {
-      margin: 0px 80px;
-    }
-  }
+	.section-subscribe {
+		.form-subscribe {
+			margin: 0px 80px;
+		}
+	}
 }
 
 @media screen and (max-width: 1020px) {
-  .section-subscribe {
-    .form-subscribe {
-      margin: 0px 40px;
-    }
-  }
+	.section-subscribe {
+		.form-subscribe {
+			margin: 0px 40px;
+		}
+	}
 }
 
 @media screen and (max-width: 1020px) {
-  .section-subscribe {
-    .form-subscribe {
-      margin: 0px 0px;
-    }
-  }
+	.section-subscribe {
+		.form-subscribe {
+			margin: 0px 0px;
+		}
+	}
 }
 
 @media screen and (max-width: 900px) {
-  .section-subscribe {
-    .form-subscribe {
-      .form-flex {
-        flex-direction: column;
+	.section-subscribe {
+		.form-subscribe {
+			.form-flex {
+				flex-direction: column;
 
-        align-items: center;
-      }
-    }
-  }
+				align-items: center;
+			}
+		}
+	}
 }
 
 @media screen and (max-width: 500px) {
-  .section-subscribe {
-    .form-subscribe {
-      .form-flex {
-        input,
-        button {
-          font-size: 1.6rem;
-        }
-      }
-    }
-  }
+	.section-subscribe {
+		.form-subscribe {
+			.form-flex {
+				input,
+				button {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
 }
