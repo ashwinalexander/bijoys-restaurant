@@ -573,18 +573,7 @@ header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i
   color: #eeff03;
 }
 
-.thanks-update {
-  margin-top: 15px;
-  background-color: lightgreen;
-  padding: 15px;
-  text-align: center;
-}
-
-.thanks-update p {
-  font-size: bold;
-  color: #191919;
-}
-
+.thanks-update,
 .covid-update {
   background-color: rgba(189, 213, 234, 0.4);
   padding: 5px 15px;
@@ -592,12 +581,24 @@ header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i
   border-radius: 5px;
 }
 
+.thanks-update p,
 .covid-update p {
   color: #191919;
   text-align: center;
   font-size: 1.4rem;
   font-weight: bolder;
   line-height: 2.2rem;
+}
+
+.thanks-update {
+  margin-top: 10px;
+  background-color: lightgreen;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.thanks-update p {
+  font-size: 1.6rem;
 }
 
 nav .mobile-menus {
@@ -697,7 +698,8 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   nav .menus ul li a {
     padding: 11px 10px;
   }
-  .covid-update p {
+  .covid-update p,
+  .thanks-update p {
     font-size: 1.2rem;
   }
 }
@@ -718,7 +720,8 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   header .masthead-social .social {
     display: none;
   }
-  .covid-update p {
+  .covid-update p,
+  .thanks-update p {
     font-size: 1.2rem;
   }
 }
@@ -742,7 +745,8 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   header .masthead-social .masthead p a {
     font-size: 1.3rem;
   }
-  .covid-update p {
+  .covid-update p,
+  .thanks-update p {
     font-size: 1.2rem;
   }
 }

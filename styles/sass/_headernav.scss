@@ -112,17 +112,7 @@ header {
 	}
 }
 
-.thanks-update {
-	margin-top: 15px;
-	background-color: lightgreen;
-	padding: 15px;
-	text-align: center;
-	p {
-		font-size: bold;
-		color: $dark-color;
-	}
-}
-
+.thanks-update,
 .covid-update {
 	background-color: $secondary-color;
 	padding: 5px 15px;
@@ -135,6 +125,16 @@ header {
 		font-size: 1.4rem;
 		font-weight: bolder;
 		line-height: 2.2rem;
+	}
+}
+
+.thanks-update {
+	margin-top: 10px;
+	background-color: lightgreen;
+	text-align: center;
+	padding: 15px 0px;
+	p {
+		font-size: 1.6rem;
 	}
 }
 
@@ -258,7 +258,8 @@ nav {
 		}
 	}
 
-	.covid-update {
+	.covid-update,
+	.thanks-update {
 		p {
 			font-size: 1.2rem;
 		}
@@ -294,7 +295,8 @@ nav {
 		}
 	}
 
-	.covid-update {
+	.covid-update,
+	.thanks-update {
 		p {
 			font-size: 1.2rem;
 		}
@@ -329,7 +331,8 @@ nav {
 			}
 		}
 	}
-	.covid-update {
+	.covid-update,
+	.thanks-update {
 		p {
 			font-size: 1.2rem;
 		}
