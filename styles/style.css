@@ -1007,6 +1007,10 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   font-weight: 800;
 }
 
+.snowflakes .snowflakes-note p {
+  text-align: center;
+}
+
 .snowflakes .snowflakes-note p a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
