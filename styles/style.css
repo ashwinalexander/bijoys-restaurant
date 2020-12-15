@@ -354,6 +354,7 @@ img {
   width: 100%;
   display: block;
   height: auto;
+  border-radius: 5px;
 }
 
 .flex-row {
@@ -595,6 +596,7 @@ header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i
   background-color: lightgreen;
   text-align: center;
   padding: 15px 0px;
+  border: 0px;
 }
 
 .thanks-update p {
