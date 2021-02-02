@@ -1,0 +1,89 @@
+.valentines {
+	padding: 50px 0px;
+	display: flex;
+	flex-direction: row;
+
+	.valentines-note {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+
+		width: 66%;
+
+		padding: 0px 40px;
+
+		h2 {
+			padding-bottom: 20px;
+			font-weight: 800;
+		}
+		p {
+			text-align: center;
+			line-height: 3rem;
+
+			a {
+				font-family: $secondary-font;
+				font-size: 1.8rem;
+			}
+		}
+
+		.btnContact {
+			&:hover {
+				a {
+					color: $accent-color;
+				}
+			}
+			a {
+				padding: 10px 30px;
+				font-size: 1.7rem;
+				color: $light-color;
+			}
+			font-size: 1.2rem;
+
+			border: 3px solid $primary-color;
+			border-radius: 5px;
+			background-color: $primary-color;
+			font-weight: bolder;
+			color: $light-color;
+
+			text-transform: lowercase;
+
+			&:hover,
+			:active,
+			:focus {
+				color: $accent-color;
+			}
+		}
+	}
+
+	.valentines-image {
+		width: 34%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.valentines-note {
+		p {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.valentines {
+		flex-direction: column;
+		padding: 25px 30px;
+
+		.valentines-note {
+			width: 100%;
+			padding: 20px 0px;
+			p {
+				font-size: 1.6rem;
+			}
+		}
+
+		.valentines-image {
+			width: 100%;
+		}
+	}
+}

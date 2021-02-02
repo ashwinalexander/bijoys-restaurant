@@ -1066,6 +1066,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 .story .story-note {
   width: 66%;
   padding: 0px 40px;
+  text-align: center;
 }
 
 .story .story-note h2 {
@@ -1337,6 +1338,105 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   .menus_section .bijoys-menu .download-menus ul li a {
     font-size: 1.4rem;
     padding: 10px 0px;
+  }
+}
+
+.valentines {
+  padding: 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.valentines .valentines-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 66%;
+  padding: 0px 40px;
+}
+
+.valentines .valentines-note h2 {
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+.valentines .valentines-note p {
+  text-align: center;
+  line-height: 3rem;
+}
+
+.valentines .valentines-note p a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+}
+
+.valentines .valentines-note .btnContact {
+  font-size: 1.2rem;
+  border: 3px solid #1da1f2;
+  border-radius: 5px;
+  background-color: #1da1f2;
+  font-weight: bolder;
+  color: #fffbfa;
+  text-transform: lowercase;
+}
+
+.valentines .valentines-note .btnContact:hover a {
+  color: #eeff03;
+}
+
+.valentines .valentines-note .btnContact a {
+  padding: 10px 30px;
+  font-size: 1.7rem;
+  color: #fffbfa;
+}
+
+.valentines .valentines-note .btnContact:hover,
+.valentines .valentines-note .btnContact :active,
+.valentines .valentines-note .btnContact :focus {
+  color: #eeff03;
+}
+
+.valentines .valentines-image {
+  width: 34%;
+}
+
+@media screen and (max-width: 1000px) {
+  .valentines-note p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .valentines {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px 30px;
+  }
+  .valentines .valentines-note {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .valentines .valentines-note p {
+    font-size: 1.6rem;
+  }
+  .valentines .valentines-image {
+    width: 100%;
   }
 }
 
