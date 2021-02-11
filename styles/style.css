@@ -1419,7 +1419,6 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  border: 2px solid red;
 }
 
 .valentines .valentines-images div {
