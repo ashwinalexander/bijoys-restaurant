@@ -1342,17 +1342,8 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .valentines {
+  border: 2px solid red;
   padding: 50px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.valentines .valentines-note {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1363,15 +1354,21 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 66%;
-  padding: 0px 40px;
 }
 
-.valentines .valentines-note h2 {
-  padding-bottom: 20px;
-  font-weight: 800;
+.valentines .valentines-note {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px 40px;
+  margin: 20px 0px;
+  width: 80%;
 }
 
 .valentines .valentines-note p {
@@ -1384,7 +1381,12 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   font-size: 1.8rem;
 }
 
-.valentines .valentines-note .btnContact {
+.valentines h2 {
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+.valentines .btnContact {
   font-size: 1.2rem;
   border: 3px solid #1da1f2;
   border-radius: 5px;
@@ -1394,20 +1396,37 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   text-transform: lowercase;
 }
 
-.valentines .valentines-note .btnContact:hover a {
+.valentines .btnContact:hover a {
   color: #eeff03;
 }
 
-.valentines .valentines-note .btnContact a {
+.valentines .btnContact a {
   padding: 10px 30px;
   font-size: 1.7rem;
   color: #fffbfa;
 }
 
-.valentines .valentines-note .btnContact:hover,
-.valentines .valentines-note .btnContact :active,
-.valentines .valentines-note .btnContact :focus {
+.valentines .btnContact:hover,
+.valentines .btnContact :active,
+.valentines .btnContact :focus {
   color: #eeff03;
+}
+
+.valentines .valentines-images {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  border: 2px solid red;
+}
+
+.valentines .valentines-images div {
+  padding: 40px;
 }
 
 .valentines .valentines-image {

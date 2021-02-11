@@ -1,22 +1,19 @@
 .valentines {
+	border: 2px solid red;
 	padding: 50px 0px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	align-items: center;
 
 	.valentines-note {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+
 		justify-content: space-around;
-
-		width: 66%;
-
 		padding: 0px 40px;
+		margin: 20px 0px;
+		width: 80%;
 
-		h2 {
-			padding-bottom: 20px;
-			font-weight: 800;
-		}
 		p {
 			text-align: center;
 			line-height: 3rem;
@@ -26,33 +23,49 @@
 				font-size: 1.8rem;
 			}
 		}
+	}
 
-		.btnContact {
-			&:hover {
-				a {
-					color: $accent-color;
-				}
-			}
+	h2 {
+		padding-bottom: 20px;
+		font-weight: 800;
+	}
+
+	.btnContact {
+		&:hover {
 			a {
-				padding: 10px 30px;
-				font-size: 1.7rem;
-				color: $light-color;
-			}
-			font-size: 1.2rem;
-
-			border: 3px solid $primary-color;
-			border-radius: 5px;
-			background-color: $primary-color;
-			font-weight: bolder;
-			color: $light-color;
-
-			text-transform: lowercase;
-
-			&:hover,
-			:active,
-			:focus {
 				color: $accent-color;
 			}
+		}
+		a {
+			padding: 10px 30px;
+			font-size: 1.7rem;
+			color: $light-color;
+		}
+		font-size: 1.2rem;
+
+		border: 3px solid $primary-color;
+		border-radius: 5px;
+		background-color: $primary-color;
+		font-weight: bolder;
+		color: $light-color;
+
+		text-transform: lowercase;
+
+		&:hover,
+		:active,
+		:focus {
+			color: $accent-color;
+		}
+	}
+
+	.valentines-images {
+		display: grid;
+		flex-direction: row;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-gap: 20px;
+		border: 2px solid red;
+		div {
+			padding: 40px;
 		}
 	}
 
