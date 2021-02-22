@@ -125,6 +125,11 @@ header {
 		font-size: 1.4rem;
 		font-weight: bolder;
 		line-height: 2.2rem;
+
+		.highlight {
+			background-color: $accent-color;
+			padding: 5px;
+		}
 	}
 }
 

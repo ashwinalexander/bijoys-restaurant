@@ -591,6 +591,12 @@ header .masthead-social .hamburger i:hover, header .masthead-social .hamburger i
   line-height: 2.2rem;
 }
 
+.thanks-update p .highlight,
+.covid-update p .highlight {
+  background-color: #eeff03;
+  padding: 5px;
+}
+
 .thanks-update {
   margin-top: 10px;
   background-color: lightgreen;
