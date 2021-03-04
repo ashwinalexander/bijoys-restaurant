@@ -1546,6 +1546,16 @@ footer .contact-footer .contact-social i {
   font-size: 2.8rem;
 }
 
+footer .contact-footer .contact-social .restguru {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
 footer .contact-footer .contact-hours p {
   text-transform: lowercase;
 }
