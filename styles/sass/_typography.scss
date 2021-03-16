@@ -5,7 +5,8 @@ $tertiary-color: #313639; //dark gray
 $accent-color: #eeff03; //fluorescent yellow
 $light-color: #fffbfa; //Ghost White
 $dark-color: #191919; //eerie black
-$christmas-color: $light-color;
+$christmas-color: pink;
+
 
 $font-family: "Didact Gothic", sans-serif;
 $secondary-font: "Montserrat", sans-serif;
@@ -46,6 +47,12 @@ h3 {
 }
 
 p {
+	font-size: 1.8rem;
+	line-height: 2.8rem;
+	letter-spacing: 0.01rem;
+}
+
+ul li{
 	font-size: 1.8rem;
 	line-height: 2.8rem;
 	letter-spacing: 0.01rem;

@@ -418,6 +418,12 @@ p {
   letter-spacing: 0.01rem;
 }
 
+ul li {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+}
+
 button {
   font-size: 2.5rem;
   text-align: center;
@@ -1006,7 +1012,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fffbfa;
+  background-color: pink;
 }
 
 .snowflakes .snowflakes-note {
@@ -1465,6 +1471,92 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
     font-size: 1.6rem;
   }
   .valentines .valentines-images div {
+    width: 100%;
+  }
+}
+
+.aurora_section {
+  background-color: rgba(189, 213, 234, 0.4);
+  margin-top: 40px;
+}
+
+.aurora_section .auroralicious {
+  padding: 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aurora_section .auroralicious .aurora-note {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 40px;
+}
+
+.aurora_section .auroralicious .aurora-note h2 {
+  font-weight: bolder;
+  margin-bottom: 15px;
+}
+
+.aurora_section .auroralicious .aurora-note div {
+  padding: 10px 0px;
+}
+
+.aurora_section .auroralicious .aurora-note p {
+  text-align: center;
+}
+
+.aurora_section .auroralicious .aurora-note a {
+  color: #1da1f2;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.01rem;
+}
+
+.aurora_section .auroralicious .aurora-image {
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .aurora-note p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .auroralicious .aurora-note {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .auroralicious .aurora-note p {
+    font-size: 1.6rem;
+  }
+  .auroralicious .aurora-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .auroralicious .aurora-note {
+    width: 100%;
+  }
+  .auroralicious .aurora-note p {
+    font-size: 1.6rem;
+  }
+  .auroralicious .aurora-image {
     width: 100%;
   }
 }
