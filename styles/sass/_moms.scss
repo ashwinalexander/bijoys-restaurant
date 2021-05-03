@@ -1,0 +1,109 @@
+.moms {
+	padding: 50px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	.moms-note {
+		display: flex;
+		flex-direction: column;
+
+		justify-content: space-around;
+		padding: 0px 40px;
+		margin: 20px 0px;
+		width: 80%;
+
+		p {
+			text-align: center;
+			line-height: 3rem;
+
+			a {
+				font-family: $secondary-font;
+				font-size: 1.8rem;
+			}
+		}
+	}
+
+	h2 {
+		padding-bottom: 20px;
+		font-weight: 800;
+	}
+
+	.btnContact {
+		&:hover {
+			a {
+				color: $accent-color;
+			}
+		}
+		a {
+			padding: 10px 30px;
+			font-size: 1.7rem;
+			color: $light-color;
+		}
+		font-size: 1.2rem;
+
+		border: 3px solid $primary-color;
+		border-radius: 5px;
+		background-color: $primary-color;
+		font-weight: bolder;
+		color: $light-color;
+
+		text-transform: lowercase;
+
+		&:hover,
+		:active,
+		:focus {
+			color: $accent-color;
+		}
+	}
+
+	.moms-images {
+		display: flex;
+		flex-direction: row;
+
+		div {
+			padding: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.moms-note {
+		p {
+			font-size: 1.6rem;
+		}
+	}
+
+	.valentines {
+		.moms-images {
+			flex-direction: column;
+
+			align-items: center;
+
+			div {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.moms {
+		flex-direction: column;
+		padding: 25px 30px;
+
+		.moms-note {
+			width: 100%;
+			padding: 20px 0px;
+			p {
+				font-size: 1.6rem;
+			}
+		}
+
+		.moms-images {
+			div {
+				width: 100%;
+			}
+		}
+	}
+}
