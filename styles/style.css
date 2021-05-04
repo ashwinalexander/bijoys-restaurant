@@ -1642,14 +1642,18 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
 }
 
 .moms .moms-images div {
-  padding: 40px;
+  padding: 10px;
+  background-color: rgba(189, 213, 234, 0.4);
+  margin: 10px;
+  border: 1px solid #1da1f2;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 1000px) {
   .moms-note p {
     font-size: 1.6rem;
   }
-  .valentines .moms-images {
+  .moms .moms-images {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1658,7 +1662,7 @@ nav .menus ul .order-button:hover a, nav .menus ul .order-button:focus a, nav .m
         -ms-flex-align: center;
             align-items: center;
   }
-  .valentines .moms-images div {
+  .moms .moms-images div {
     width: 50%;
   }
 }

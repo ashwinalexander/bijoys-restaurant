@@ -62,7 +62,12 @@
 		flex-direction: row;
 
 		div {
-			padding: 40px;
+			padding: 10px;
+
+			background-color: $secondary-color;
+			margin: 10px;
+			border: 1px solid $primary-color;
+			border-radius: 5px;
 		}
 	}
 }
@@ -74,7 +79,7 @@
 		}
 	}
 
-	.valentines {
+	.moms {
 		.moms-images {
 			flex-direction: column;
 
